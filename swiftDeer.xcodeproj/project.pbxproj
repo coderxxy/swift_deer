@@ -7,95 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C187D16A2B28AB1800E3CE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C187D1692B28AB1800E3CE34 /* AppDelegate.swift */; };
-		C187D16C2B28AB1800E3CE34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C187D16B2B28AB1800E3CE34 /* ContentView.swift */; };
-		C187D16E2B28AB1900E3CE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C187D16D2B28AB1900E3CE34 /* Assets.xcassets */; };
-		C187D1712B28AB1900E3CE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C187D16F2B28AB1900E3CE34 /* LaunchScreen.storyboard */; };
-		D81EC6399C12B62048C66B6A /* Pods_swiftDeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488E0BB516DE114B3006639A /* Pods_swiftDeer.framework */; };
+		14E36A2A0A4246029FEBF376 /* Pods_swiftDeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */; };
+		C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE32B2D708000DA34DD /* AppDelegate.swift */; };
+		C1689EE62B2D708000DA34DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE52B2D708000DA34DD /* SceneDelegate.swift */; };
+		C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE72B2D708000DA34DD /* ViewController.swift */; };
+		C1689EEB2B2D708000DA34DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1689EE92B2D708000DA34DD /* Main.storyboard */; };
+		C1689EED2B2D708200DA34DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1689EEC2B2D708200DA34DD /* Assets.xcassets */; };
+		C1689EF02B2D708200DA34DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1689EEE2B2D708200DA34DD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		488E0BB516DE114B3006639A /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A249DF40679860F7925E653B /* Pods-swiftDeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.debug.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.debug.xcconfig"; sourceTree = "<group>"; };
-		C187D1662B28AB1800E3CE34 /* swiftDeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C187D1692B28AB1800E3CE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C187D16B2B28AB1800E3CE34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C187D16D2B28AB1900E3CE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C187D1702B28AB1900E3CE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EA6E268C9B39E32EF823D898 /* Pods-swiftDeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.release.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.release.xcconfig"; sourceTree = "<group>"; };
+		527B68D46F8981735500B38B /* Pods-swiftDeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.release.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.release.xcconfig"; sourceTree = "<group>"; };
+		A7FA91D12E2DF7AEA481105D /* Pods-swiftDeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.debug.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.debug.xcconfig"; sourceTree = "<group>"; };
+		C1689EE02B2D708000DA34DD /* swiftDeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1689EE32B2D708000DA34DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1689EE52B2D708000DA34DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C1689EE72B2D708000DA34DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1689EEA2B2D708000DA34DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1689EEC2B2D708200DA34DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1689EEF2B2D708200DA34DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1689EF12B2D708200DA34DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C187D1632B28AB1800E3CE34 /* Frameworks */ = {
+		C1689EDD2B2D708000DA34DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81EC6399C12B62048C66B6A /* Pods_swiftDeer.framework in Frameworks */,
+				14E36A2A0A4246029FEBF376 /* Pods_swiftDeer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4FDBEC74E0EDE325096327AE /* Pods */ = {
+		1F3ED3524BF9859C54C8D751 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A249DF40679860F7925E653B /* Pods-swiftDeer.debug.xcconfig */,
-				EA6E268C9B39E32EF823D898 /* Pods-swiftDeer.release.xcconfig */,
+				A7FA91D12E2DF7AEA481105D /* Pods-swiftDeer.debug.xcconfig */,
+				527B68D46F8981735500B38B /* Pods-swiftDeer.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5DC2F7822E658090C4F1303C /* Frameworks */ = {
+		C1689ED72B2D708000DA34DD = {
 			isa = PBXGroup;
 			children = (
-				488E0BB516DE114B3006639A /* Pods_swiftDeer.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C187D15D2B28AB1800E3CE34 = {
-			isa = PBXGroup;
-			children = (
-				C187D1682B28AB1800E3CE34 /* swiftDeer */,
-				C187D1672B28AB1800E3CE34 /* Products */,
-				4FDBEC74E0EDE325096327AE /* Pods */,
-				5DC2F7822E658090C4F1303C /* Frameworks */,
+				C1689EE22B2D708000DA34DD /* swiftDeer */,
+				C1689EE12B2D708000DA34DD /* Products */,
+				1F3ED3524BF9859C54C8D751 /* Pods */,
+				D1E96E5875C3BA455138D7CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C187D1672B28AB1800E3CE34 /* Products */ = {
+		C1689EE12B2D708000DA34DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C187D1662B28AB1800E3CE34 /* swiftDeer.app */,
+				C1689EE02B2D708000DA34DD /* swiftDeer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C187D1682B28AB1800E3CE34 /* swiftDeer */ = {
+		C1689EE22B2D708000DA34DD /* swiftDeer */ = {
 			isa = PBXGroup;
 			children = (
-				C187D1692B28AB1800E3CE34 /* AppDelegate.swift */,
-				C187D16B2B28AB1800E3CE34 /* ContentView.swift */,
-				C187D16D2B28AB1900E3CE34 /* Assets.xcassets */,
-				C187D16F2B28AB1900E3CE34 /* LaunchScreen.storyboard */,
+				C1689EE32B2D708000DA34DD /* AppDelegate.swift */,
+				C1689EE52B2D708000DA34DD /* SceneDelegate.swift */,
+				C1689EE72B2D708000DA34DD /* ViewController.swift */,
+				C1689EE92B2D708000DA34DD /* Main.storyboard */,
+				C1689EEC2B2D708200DA34DD /* Assets.xcassets */,
+				C1689EEE2B2D708200DA34DD /* LaunchScreen.storyboard */,
+				C1689EF12B2D708200DA34DD /* Info.plist */,
 			);
 			path = swiftDeer;
+			sourceTree = "<group>";
+		};
+		D1E96E5875C3BA455138D7CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C187D1652B28AB1800E3CE34 /* swiftDeer */ = {
+		C1689EDF2B2D708000DA34DD /* swiftDeer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C187D1742B28AB1900E3CE34 /* Build configuration list for PBXNativeTarget "swiftDeer" */;
+			buildConfigurationList = C1689EF42B2D708200DA34DD /* Build configuration list for PBXNativeTarget "swiftDeer" */;
 			buildPhases = (
-				C2DA022F9DD6A9554ACED477 /* [CP] Check Pods Manifest.lock */,
-				C187D1622B28AB1800E3CE34 /* Sources */,
-				C187D1632B28AB1800E3CE34 /* Frameworks */,
-				C187D1642B28AB1800E3CE34 /* Resources */,
-				BA9B5A3FD356220383DC56BC /* [CP] Embed Pods Frameworks */,
+				0FF2846DA98ECF3FADCEC064 /* [CP] Check Pods Manifest.lock */,
+				C1689EDC2B2D708000DA34DD /* Sources */,
+				C1689EDD2B2D708000DA34DD /* Frameworks */,
+				C1689EDE2B2D708000DA34DD /* Resources */,
+				79A4A0A9D38FB0E70A75FA72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,25 +111,25 @@
 			);
 			name = swiftDeer;
 			productName = swiftDeer;
-			productReference = C187D1662B28AB1800E3CE34 /* swiftDeer.app */;
+			productReference = C1689EE02B2D708000DA34DD /* swiftDeer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C187D15E2B28AB1800E3CE34 /* Project object */ = {
+		C1689ED82B2D708000DA34DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					C187D1652B28AB1800E3CE34 = {
+					C1689EDF2B2D708000DA34DD = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = C187D1612B28AB1800E3CE34 /* Build configuration list for PBXProject "swiftDeer" */;
+			buildConfigurationList = C1689EDB2B2D708000DA34DD /* Build configuration list for PBXProject "swiftDeer" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,47 +137,31 @@
 				en,
 				Base,
 			);
-			mainGroup = C187D15D2B28AB1800E3CE34;
-			productRefGroup = C187D1672B28AB1800E3CE34 /* Products */;
+			mainGroup = C1689ED72B2D708000DA34DD;
+			productRefGroup = C1689EE12B2D708000DA34DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C187D1652B28AB1800E3CE34 /* swiftDeer */,
+				C1689EDF2B2D708000DA34DD /* swiftDeer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C187D1642B28AB1800E3CE34 /* Resources */ = {
+		C1689EDE2B2D708000DA34DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C187D16E2B28AB1900E3CE34 /* Assets.xcassets in Resources */,
-				C187D1712B28AB1900E3CE34 /* LaunchScreen.storyboard in Resources */,
+				C1689EF02B2D708200DA34DD /* LaunchScreen.storyboard in Resources */,
+				C1689EED2B2D708200DA34DD /* Assets.xcassets in Resources */,
+				C1689EEB2B2D708000DA34DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BA9B5A3FD356220383DC56BC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-swiftDeer/Pods-swiftDeer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-swiftDeer/Pods-swiftDeer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swiftDeer/Pods-swiftDeer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2DA022F9DD6A9554ACED477 /* [CP] Check Pods Manifest.lock */ = {
+		0FF2846DA98ECF3FADCEC064 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,25 +183,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		79A4A0A9D38FB0E70A75FA72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftDeer/Pods-swiftDeer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftDeer/Pods-swiftDeer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swiftDeer/Pods-swiftDeer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C187D1622B28AB1800E3CE34 /* Sources */ = {
+		C1689EDC2B2D708000DA34DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C187D16C2B28AB1800E3CE34 /* ContentView.swift in Sources */,
-				C187D16A2B28AB1800E3CE34 /* AppDelegate.swift in Sources */,
+				C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */,
+				C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */,
+				C1689EE62B2D708000DA34DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C187D16F2B28AB1900E3CE34 /* LaunchScreen.storyboard */ = {
+		C1689EE92B2D708000DA34DD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C187D1702B28AB1900E3CE34 /* Base */,
+				C1689EEA2B2D708000DA34DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1689EEE2B2D708200DA34DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1689EEF2B2D708200DA34DD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -217,7 +235,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C187D1722B28AB1900E3CE34 /* Debug */ = {
+		C1689EF22B2D708200DA34DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -280,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		C187D1732B28AB1900E3CE34 /* Release */ = {
+		C1689EF32B2D708200DA34DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -326,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -336,9 +354,9 @@
 			};
 			name = Release;
 		};
-		C187D1752B28AB1900E3CE34 /* Debug */ = {
+		C1689EF52B2D708200DA34DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A249DF40679860F7925E653B /* Pods-swiftDeer.debug.xcconfig */;
+			baseConfigurationReference = A7FA91D12E2DF7AEA481105D /* Pods-swiftDeer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,11 +364,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6F2HPKJKH4;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swiftDeer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,9 +383,9 @@
 			};
 			name = Debug;
 		};
-		C187D1762B28AB1900E3CE34 /* Release */ = {
+		C1689EF62B2D708200DA34DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA6E268C9B39E32EF823D898 /* Pods-swiftDeer.release.xcconfig */;
+			baseConfigurationReference = 527B68D46F8981735500B38B /* Pods-swiftDeer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,11 +393,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6F2HPKJKH4;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swiftDeer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -395,25 +415,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C187D1612B28AB1800E3CE34 /* Build configuration list for PBXProject "swiftDeer" */ = {
+		C1689EDB2B2D708000DA34DD /* Build configuration list for PBXProject "swiftDeer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C187D1722B28AB1900E3CE34 /* Debug */,
-				C187D1732B28AB1900E3CE34 /* Release */,
+				C1689EF22B2D708200DA34DD /* Debug */,
+				C1689EF32B2D708200DA34DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C187D1742B28AB1900E3CE34 /* Build configuration list for PBXNativeTarget "swiftDeer" */ = {
+		C1689EF42B2D708200DA34DD /* Build configuration list for PBXNativeTarget "swiftDeer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C187D1752B28AB1900E3CE34 /* Debug */,
-				C187D1762B28AB1900E3CE34 /* Release */,
+				C1689EF52B2D708200DA34DD /* Debug */,
+				C1689EF62B2D708200DA34DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C187D15E2B28AB1800E3CE34 /* Project object */;
+	rootObject = C1689ED82B2D708000DA34DD /* Project object */;
 }
