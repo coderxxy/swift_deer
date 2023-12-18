@@ -9,11 +9,22 @@
 /* Begin PBXBuildFile section */
 		14E36A2A0A4246029FEBF376 /* Pods_swiftDeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */; };
 		C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE32B2D708000DA34DD /* AppDelegate.swift */; };
-		C1689EE62B2D708000DA34DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE52B2D708000DA34DD /* SceneDelegate.swift */; };
 		C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE72B2D708000DA34DD /* ViewController.swift */; };
 		C1689EEB2B2D708000DA34DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1689EE92B2D708000DA34DD /* Main.storyboard */; };
 		C1689EED2B2D708200DA34DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1689EEC2B2D708200DA34DD /* Assets.xcassets */; };
 		C1689EF02B2D708200DA34DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1689EEE2B2D708200DA34DD /* LaunchScreen.storyboard */; };
+		C1DC4DF22B3082AA0018D6E3 /* XYBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF12B3082AA0018D6E3 /* XYBaseView.swift */; };
+		C1DC4DF42B3082C10018D6E3 /* XYBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF32B3082C10018D6E3 /* XYBaseController.swift */; };
+		C1DC4DF62B3082DF0018D6E3 /* XYBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF52B3082DF0018D6E3 /* XYBaseNavigationController.swift */; };
+		C1DC4DF82B3082F90018D6E3 /* XYBaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF72B3082F90018D6E3 /* XYBaseTabbarController.swift */; };
+		C1DC4DFA2B3083260018D6E3 /* XYTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF92B3083260018D6E3 /* XYTabbar.swift */; };
+		C1DC4DFC2B3083490018D6E3 /* XYBaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DFB2B3083490018D6E3 /* XYBaseNavigationBar.swift */; };
+		C1DC4E1C2B3087350018D6E3 /* XYDeerLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E1B2B3087350018D6E3 /* XYDeerLoginController.swift */; };
+		C1DC4E1E2B3087520018D6E3 /* XYDeerRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E1D2B3087520018D6E3 /* XYDeerRegisterController.swift */; };
+		C1DC4E202B3087750018D6E3 /* XYDeerOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E1F2B3087750018D6E3 /* XYDeerOrderController.swift */; };
+		C1DC4E222B3087900018D6E3 /* XYDeerProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E212B3087900018D6E3 /* XYDeerProductsController.swift */; };
+		C1DC4E242B3087A10018D6E3 /* XYDeerTotalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E232B3087A10018D6E3 /* XYDeerTotalsController.swift */; };
+		C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E252B3087B60018D6E3 /* XYDeerShopController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +32,24 @@
 		A7FA91D12E2DF7AEA481105D /* Pods-swiftDeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.debug.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.debug.xcconfig"; sourceTree = "<group>"; };
 		C1689EE02B2D708000DA34DD /* swiftDeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1689EE32B2D708000DA34DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1689EE52B2D708000DA34DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C1689EE72B2D708000DA34DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1689EEA2B2D708000DA34DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1689EEC2B2D708200DA34DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1689EEF2B2D708200DA34DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1689EF12B2D708200DA34DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DC4DF12B3082AA0018D6E3 /* XYBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseView.swift; sourceTree = "<group>"; };
+		C1DC4DF32B3082C10018D6E3 /* XYBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseController.swift; sourceTree = "<group>"; };
+		C1DC4DF52B3082DF0018D6E3 /* XYBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseNavigationController.swift; sourceTree = "<group>"; };
+		C1DC4DF72B3082F90018D6E3 /* XYBaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseTabbarController.swift; sourceTree = "<group>"; };
+		C1DC4DF92B3083260018D6E3 /* XYTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYTabbar.swift; sourceTree = "<group>"; };
+		C1DC4DFB2B3083490018D6E3 /* XYBaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseNavigationBar.swift; sourceTree = "<group>"; };
+		C1DC4E1B2B3087350018D6E3 /* XYDeerLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerLoginController.swift; sourceTree = "<group>"; };
+		C1DC4E1D2B3087520018D6E3 /* XYDeerRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerRegisterController.swift; sourceTree = "<group>"; };
+		C1DC4E1F2B3087750018D6E3 /* XYDeerOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderController.swift; sourceTree = "<group>"; };
+		C1DC4E212B3087900018D6E3 /* XYDeerProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerProductsController.swift; sourceTree = "<group>"; };
+		C1DC4E232B3087A10018D6E3 /* XYDeerTotalsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerTotalsController.swift; sourceTree = "<group>"; };
+		C1DC4E252B3087B60018D6E3 /* XYDeerShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerShopController.swift; sourceTree = "<group>"; };
+		C1DC4E282B308A1E0018D6E3 /* swiftDeer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftDeer-Bridging-Header.h"; sourceTree = "<group>"; };
 		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +71,6 @@
 				A7FA91D12E2DF7AEA481105D /* Pods-swiftDeer.debug.xcconfig */,
 				527B68D46F8981735500B38B /* Pods-swiftDeer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +95,355 @@
 		C1689EE22B2D708000DA34DD /* swiftDeer */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E192B30857E0018D6E3 /* vendor */,
+				C1DC4DE72B3081980018D6E3 /* mainMoudle */,
+			);
+			path = swiftDeer;
+			sourceTree = "<group>";
+		};
+		C1DC4DE72B3081980018D6E3 /* mainMoudle */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E182B3085010018D6E3 /* mainSource */,
+				C1DC4E172B3084DF0018D6E3 /* appDelegate */,
+				C1DC4E012B30839C0018D6E3 /* loginModule */,
+				C1DC4DEC2B3082140018D6E3 /* shopMoudle */,
+				C1DC4DEB2B3082010018D6E3 /* totalsModule */,
+				C1DC4DEA2B3081ED0018D6E3 /* productsModule */,
+				C1DC4DE92B3081DB0018D6E3 /* orderModule */,
+				C1DC4DE82B3081A30018D6E3 /* baseMoudle */,
+			);
+			path = mainMoudle;
+			sourceTree = "<group>";
+		};
+		C1DC4DE82B3081A30018D6E3 /* baseMoudle */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E072B30841B0018D6E3 /* baseManager */,
+				C1DC4DF02B30825D0018D6E3 /* tabbarMoudle */,
+				C1DC4DEF2B3082470018D6E3 /* navigationModule */,
+				C1DC4DEE2B30823E0018D6E3 /* baseControllers */,
+				C1DC4DED2B30822D0018D6E3 /* baseViewModule */,
+			);
+			path = baseMoudle;
+			sourceTree = "<group>";
+		};
+		C1DC4DE92B3081DB0018D6E3 /* orderModule */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E152B3084CC0018D6E3 /* utils */,
+				C1DC4E162B3084CC0018D6E3 /* views */,
+				C1DC4E002B30838C0018D6E3 /* controllers */,
+			);
+			path = orderModule;
+			sourceTree = "<group>";
+		};
+		C1DC4DEA2B3081ED0018D6E3 /* productsModule */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E132B3084C40018D6E3 /* utils */,
+				C1DC4E142B3084C40018D6E3 /* views */,
+				C1DC4DFF2B3083820018D6E3 /* controllers */,
+			);
+			path = productsModule;
+			sourceTree = "<group>";
+		};
+		C1DC4DEB2B3082010018D6E3 /* totalsModule */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E122B3084BC0018D6E3 /* utils */,
+				C1DC4E112B3084BC0018D6E3 /* views */,
+				C1DC4DFE2B3083780018D6E3 /* controllers */,
+			);
+			path = totalsModule;
+			sourceTree = "<group>";
+		};
+		C1DC4DEC2B3082140018D6E3 /* shopMoudle */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E062B3084100018D6E3 /* utils */,
+				C1DC4E052B3084010018D6E3 /* views */,
+				C1DC4DFD2B30836E0018D6E3 /* controllers */,
+			);
+			path = shopMoudle;
+			sourceTree = "<group>";
+		};
+		C1DC4DED2B30822D0018D6E3 /* baseViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4DF12B3082AA0018D6E3 /* XYBaseView.swift */,
+				C1DC4DF92B3083260018D6E3 /* XYTabbar.swift */,
+				C1DC4DFB2B3083490018D6E3 /* XYBaseNavigationBar.swift */,
+			);
+			path = baseViewModule;
+			sourceTree = "<group>";
+		};
+		C1DC4DEE2B30823E0018D6E3 /* baseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4DF32B3082C10018D6E3 /* XYBaseController.swift */,
+			);
+			path = baseControllers;
+			sourceTree = "<group>";
+		};
+		C1DC4DEF2B3082470018D6E3 /* navigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4DF52B3082DF0018D6E3 /* XYBaseNavigationController.swift */,
+			);
+			path = navigationModule;
+			sourceTree = "<group>";
+		};
+		C1DC4DF02B30825D0018D6E3 /* tabbarMoudle */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4DF72B3082F90018D6E3 /* XYBaseTabbarController.swift */,
+			);
+			path = tabbarMoudle;
+			sourceTree = "<group>";
+		};
+		C1DC4DFD2B30836E0018D6E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E252B3087B60018D6E3 /* XYDeerShopController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C1DC4DFE2B3083780018D6E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E232B3087A10018D6E3 /* XYDeerTotalsController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C1DC4DFF2B3083820018D6E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E212B3087900018D6E3 /* XYDeerProductsController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C1DC4E002B30838C0018D6E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E1F2B3087750018D6E3 /* XYDeerOrderController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C1DC4E012B30839C0018D6E3 /* loginModule */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E042B3083D10018D6E3 /* userAccountManager */,
+				C1DC4E032B3083AE0018D6E3 /* register */,
+				C1DC4E022B3083A70018D6E3 /* login */,
+			);
+			path = loginModule;
+			sourceTree = "<group>";
+		};
+		C1DC4E022B3083A70018D6E3 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E0E2B30849F0018D6E3 /* controllers */,
+				C1DC4E0F2B30849F0018D6E3 /* utils */,
+				C1DC4E102B30849F0018D6E3 /* views */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		C1DC4E032B3083AE0018D6E3 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E0C2B3084960018D6E3 /* controllers */,
+				C1DC4E0D2B3084960018D6E3 /* utils */,
+				C1DC4E0B2B3084960018D6E3 /* views */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
+		C1DC4E042B3083D10018D6E3 /* userAccountManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E092B30848B0018D6E3 /* controllers */,
+				C1DC4E0A2B30848B0018D6E3 /* utils */,
+				C1DC4E082B30848B0018D6E3 /* views */,
+			);
+			path = userAccountManager;
+			sourceTree = "<group>";
+		};
+		C1DC4E052B3084010018D6E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C1DC4E062B3084100018D6E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C1DC4E072B30841B0018D6E3 /* baseManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = baseManager;
+			sourceTree = "<group>";
+		};
+		C1DC4E082B30848B0018D6E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C1DC4E092B30848B0018D6E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C1DC4E0A2B30848B0018D6E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C1DC4E0B2B3084960018D6E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C1DC4E0C2B3084960018D6E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E1D2B3087520018D6E3 /* XYDeerRegisterController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C1DC4E0D2B3084960018D6E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C1DC4E0E2B30849F0018D6E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E1B2B3087350018D6E3 /* XYDeerLoginController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C1DC4E0F2B30849F0018D6E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C1DC4E102B30849F0018D6E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C1DC4E112B3084BC0018D6E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C1DC4E122B3084BC0018D6E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C1DC4E132B3084C40018D6E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C1DC4E142B3084C40018D6E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C1DC4E152B3084CC0018D6E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C1DC4E162B3084CC0018D6E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C1DC4E172B3084DF0018D6E3 /* appDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				C1689EE32B2D708000DA34DD /* AppDelegate.swift */,
-				C1689EE52B2D708000DA34DD /* SceneDelegate.swift */,
+			);
+			path = appDelegate;
+			sourceTree = "<group>";
+		};
+		C1DC4E182B3085010018D6E3 /* mainSource */ = {
+			isa = PBXGroup;
+			children = (
 				C1689EE72B2D708000DA34DD /* ViewController.swift */,
 				C1689EE92B2D708000DA34DD /* Main.storyboard */,
 				C1689EEC2B2D708200DA34DD /* Assets.xcassets */,
 				C1689EEE2B2D708200DA34DD /* LaunchScreen.storyboard */,
 				C1689EF12B2D708200DA34DD /* Info.plist */,
 			);
-			path = swiftDeer;
+			path = mainSource;
+			sourceTree = "<group>";
+		};
+		C1DC4E192B30857E0018D6E3 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E272B3089EB0018D6E3 /* bridgesHelper */,
+				C1DC4E1A2B3085840018D6E3 /* macros */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		C1DC4E1A2B3085840018D6E3 /* macros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = macros;
+			sourceTree = "<group>";
+		};
+		C1DC4E272B3089EB0018D6E3 /* bridgesHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E282B308A1E0018D6E3 /* swiftDeer-Bridging-Header.h */,
+			);
+			path = bridgesHelper;
 			sourceTree = "<group>";
 		};
 		D1E96E5875C3BA455138D7CC /* Frameworks */ = {
@@ -207,9 +569,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DC4E242B3087A10018D6E3 /* XYDeerTotalsController.swift in Sources */,
+				C1DC4DFC2B3083490018D6E3 /* XYBaseNavigationBar.swift in Sources */,
 				C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */,
+				C1DC4E222B3087900018D6E3 /* XYDeerProductsController.swift in Sources */,
+				C1DC4DF82B3082F90018D6E3 /* XYBaseTabbarController.swift in Sources */,
+				C1DC4E1E2B3087520018D6E3 /* XYDeerRegisterController.swift in Sources */,
+				C1DC4DF42B3082C10018D6E3 /* XYBaseController.swift in Sources */,
+				C1DC4E1C2B3087350018D6E3 /* XYDeerLoginController.swift in Sources */,
 				C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */,
-				C1689EE62B2D708000DA34DD /* SceneDelegate.swift in Sources */,
+				C1DC4DF22B3082AA0018D6E3 /* XYBaseView.swift in Sources */,
+				C1DC4E202B3087750018D6E3 /* XYDeerOrderController.swift in Sources */,
+				C1DC4DF62B3082DF0018D6E3 /* XYBaseNavigationController.swift in Sources */,
+				C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */,
+				C1DC4DFA2B3083260018D6E3 /* XYTabbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,13 +736,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6F2HPKJKH4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = swiftDeer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +753,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidian.swiftDeer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swiftDeer/vendor/bridgesHelper/swiftDeer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,13 +768,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6F2HPKJKH4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = swiftDeer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,6 +785,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidian.swiftDeer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swiftDeer/vendor/bridgesHelper/swiftDeer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
