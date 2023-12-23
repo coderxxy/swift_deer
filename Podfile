@@ -7,6 +7,7 @@ target 'swiftDeer' do
   pod 'Alamofire'           	# 网络请求
   pod 'SnapKit'               	# UI布局
   pod 'SnapKitExtend'
+  pod 'XYUIKit-Swift', :git=>'https://github.com/coderXXY/XYUIKit-Swift.git', :branch => 'master'
 #  pod 'SCLAlertView'			# alert
   
 end

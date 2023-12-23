@@ -10,6 +10,7 @@ import UIKit
 class XYDeerLoginController: XYBaseController {
     
     var loginTipLab:UILabel?
+    lazy var loginView:XYDeerLoginView = XYDeerLoginView(frame: CGRectZero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +19,11 @@ class XYDeerLoginController: XYBaseController {
     }
     
     func showTipHandle() {
-        self.loginTipLab = UILabel(frame: CGRectZero)
-        self.loginTipLab?.backgroundColor = UIColor.red
-        self.loginTipLab?.text = "login module";
-        self.view.addSubview(self.loginTipLab!)
-        self.loginTipLab?.snp.makeConstraints({ make in
-            make.centerX.equalTo(self.view.snp.centerX)
-            make.top.equalTo(self.view.snp.top).offset(100)
-            make.size.equalTo(CGSize(width: 80, height: 80))
-        })
+        self.navigationItem.title = "登陆";
+        self.view.addSubview(self.loginView)
+        self.loginView.snp.makeConstraints { make in
+            make.top.left.bottom.right.equalTo(self.view)
+        }
     }
-
+    // MARK: END
 }

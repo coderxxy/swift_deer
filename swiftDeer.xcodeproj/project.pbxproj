@@ -25,6 +25,7 @@
 		C1DC4E222B3087900018D6E3 /* XYDeerProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E212B3087900018D6E3 /* XYDeerProductsController.swift */; };
 		C1DC4E242B3087A10018D6E3 /* XYDeerTotalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E232B3087A10018D6E3 /* XYDeerTotalsController.swift */; };
 		C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E252B3087B60018D6E3 /* XYDeerShopController.swift */; };
+		C1DC4E2A2B36CA110018D6E3 /* XYDeerLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E292B36CA110018D6E3 /* XYDeerLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		C1DC4E232B3087A10018D6E3 /* XYDeerTotalsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerTotalsController.swift; sourceTree = "<group>"; };
 		C1DC4E252B3087B60018D6E3 /* XYDeerShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerShopController.swift; sourceTree = "<group>"; };
 		C1DC4E282B308A1E0018D6E3 /* swiftDeer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftDeer-Bridging-Header.h"; sourceTree = "<group>"; };
+		C1DC4E292B36CA110018D6E3 /* XYDeerLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerLoginView.swift; sourceTree = "<group>"; };
 		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -356,6 +358,7 @@
 		C1DC4E102B30849F0018D6E3 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E292B36CA110018D6E3 /* XYDeerLoginView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				C1DC4E1C2B3087350018D6E3 /* XYDeerLoginController.swift in Sources */,
 				C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */,
 				C1DC4DF22B3082AA0018D6E3 /* XYBaseView.swift in Sources */,
+				C1DC4E2A2B36CA110018D6E3 /* XYDeerLoginView.swift in Sources */,
 				C1DC4E202B3087750018D6E3 /* XYDeerOrderController.swift in Sources */,
 				C1DC4DF62B3082DF0018D6E3 /* XYBaseNavigationController.swift in Sources */,
 				C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */,

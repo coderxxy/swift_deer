@@ -8,13 +8,21 @@
 import UIKit
 
 class XYBaseView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    /** 子视图容器视图 */
+    lazy var subContentView:UIView = UIView(frame: CGRectZero);
+    /** title label */
+    lazy var titleLab:UILabel = UILabel(frame: CGRectZero);
+    /** sub title label */
+    lazy var subTitleLab:UILabel = UILabel(frame: CGRectZero);
+    /** detail label */
+    lazy var detailLab:UILabel = UILabel(frame: CGRectZero);
+    /** click button */
+    lazy var clickBtn:UIButton = UIButton(type: .custom);
+    required init?(coder: NSCoder) {
+        fatalError("[xy-baseView]init(coder:) has not been implemented");
     }
-    */
-
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        // TODO: code
+    }
 }
