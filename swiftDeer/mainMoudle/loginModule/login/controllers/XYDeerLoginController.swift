@@ -8,18 +8,20 @@
 import UIKit
 
 class XYDeerLoginController: XYBaseController {
-    
-    var loginTipLab:UILabel?
+    lazy var loginPresenter:XYDeerLoginPresenter = XYDeerLoginPresenter(controller: self)
     lazy var loginView:XYDeerLoginView = XYDeerLoginView(frame: CGRectZero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.showTipHandle();
+        self.loginConfigHandle()
+        self.loginSubviewsHandle();
     }
-    
-    func showTipHandle() {
-        self.navigationItem.title = "登陆";
+    func loginConfigHandle() {
+//        self.navigationItem.title = "登陆";
+        self.loginView.deerLoginViewDelegate = (self.loginPresenter as? any XYDeerLoginViewDelegate)
+    }
+    func loginSubviewsHandle() {
         self.view.addSubview(self.loginView)
         self.loginView.snp.makeConstraints { make in
             make.top.left.bottom.right.equalTo(self.view)

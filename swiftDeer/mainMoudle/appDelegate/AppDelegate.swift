@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.white
         // 判断是否已经登陆
         let logined:NSNumber? = UserDefaults.standard.object(forKey: "deerLogined") as? NSNumber
-        
+        // 键盘收缩
+        XYDeerConfigService().xyDeerKeyboardHandle()
+        // 
         window?.rootViewController = XYBaseNavigationController.init(rootViewController: XYDeerLoginController())
         window?.makeKeyAndVisible()
         return true

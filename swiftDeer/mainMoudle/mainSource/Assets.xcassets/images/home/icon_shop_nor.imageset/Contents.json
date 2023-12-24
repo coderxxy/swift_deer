@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icon_commodity.png",
+      "filename" : "icon_shop_nor.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "icon_shop_nor@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "icon_shop_nor@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
