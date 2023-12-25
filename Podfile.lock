@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   XYUIKit-Swift:
-    :commit: 597c489405a4a04cfe9bab41d1eb862077a95f51
+    :commit: 11a0912666c7bd9c533ab31649868e55d31d024e
     :git: https://github.com/coderXXY/XYUIKit-Swift.git
 
 SPEC CHECKSUMS:

@@ -8,22 +8,21 @@
 import UIKit
 
 class XYDeerOrderController: XYBaseController {
+    
+    lazy var orderTitleView:XYDeerOrderHeaderView = XYDeerOrderHeaderView(frame: CGRectZero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.orderVCSubviews()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //
+    func orderVCSubviews() {
+        let imgViewHeight:CGFloat = self.orderTitleView.orderTitleViewHeight(self.orderTitleView.bgImg)+self.orderTitleView.orderTitleViewHeight(self.orderTitleView.circleImg)
+        self.view.addSubview(self.orderTitleView)
+        self.orderTitleView.snp.makeConstraints { make in
+            make.top.left.right.equalTo(self.view)
+            make.height.equalTo(imgViewHeight)
+        }
     }
-    */
-
 }

@@ -31,6 +31,8 @@
 		C1DC4E372B385F400018D6E3 /* XYDeerLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E362B385F400018D6E3 /* XYDeerLoginPresenter.swift */; };
 		C1DC4E392B3860A90018D6E3 /* XYDeerBasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E382B3860A90018D6E3 /* XYDeerBasePresenter.swift */; };
 		C1DC4E3B2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3A2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift */; };
+		C1DC4E3D2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */; };
+		C1DC4E3F2B39BD260018D6E3 /* XYDeerOrderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		C1DC4E362B385F400018D6E3 /* XYDeerLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerLoginPresenter.swift; sourceTree = "<group>"; };
 		C1DC4E382B3860A90018D6E3 /* XYDeerBasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerBasePresenter.swift; sourceTree = "<group>"; };
 		C1DC4E3A2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerLoginPresenterExtension.swift; sourceTree = "<group>"; };
+		C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderHeaderView.swift; sourceTree = "<group>"; };
+		C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderTitleView.swift; sourceTree = "<group>"; };
 		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -414,6 +418,8 @@
 		C1DC4E162B3084CC0018D6E3 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */,
+				C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -598,6 +604,7 @@
 				C1DC4E242B3087A10018D6E3 /* XYDeerTotalsController.swift in Sources */,
 				C1DC4DFC2B3083490018D6E3 /* XYBaseNavigationBar.swift in Sources */,
 				C1DC4E392B3860A90018D6E3 /* XYDeerBasePresenter.swift in Sources */,
+				C1DC4E3D2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift in Sources */,
 				C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */,
 				C1DC4E222B3087900018D6E3 /* XYDeerProductsController.swift in Sources */,
 				C1DC4E3B2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift in Sources */,
@@ -605,6 +612,7 @@
 				C1DC4E1E2B3087520018D6E3 /* XYDeerRegisterController.swift in Sources */,
 				C1DC4DF42B3082C10018D6E3 /* XYBaseController.swift in Sources */,
 				C1DC4E372B385F400018D6E3 /* XYDeerLoginPresenter.swift in Sources */,
+				C1DC4E3F2B39BD260018D6E3 /* XYDeerOrderTitleView.swift in Sources */,
 				C1DC4E1C2B3087350018D6E3 /* XYDeerLoginController.swift in Sources */,
 				C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */,
 				C1DC4DF22B3082AA0018D6E3 /* XYBaseView.swift in Sources */,

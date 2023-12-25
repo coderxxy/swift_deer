@@ -62,6 +62,17 @@ let XYCommonPadding_30 : CGFloat = 30.0
 let XYCommonMaxPadding : CGFloat = 20.0
 /** common subPadding */
 let XYCommonMinPadding : CGFloat = 5.0
+
+/** XYSCREEN_W */
+let XYSCREEN_Width = UIScreen.main.bounds.size.width
+/** XYSCREEN_H */
+let XYSCREEN_Height = UIScreen.main.bounds.size.height
+
+// MARK: common method
+/** image with name */
+public func XYDeerImg(imgName:String)->UIImage{
+    return UIImage(named: imgName)!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+}
 // MARK: - 颜色
 public func color(colorValue:String) -> UIColor{
     return UIColor.xy.hexStringToColor(hexString: colorValue)
@@ -69,4 +80,12 @@ public func color(colorValue:String) -> UIColor{
 // MARK: 颜色 可设置透明度
 public func colorAlpha(colorValue:String, alpha:CGFloat) -> UIColor {
     return UIColor.xy.hexStringToColor(hexString: colorValue, alpha: alpha)
+}
+/** font */
+public func XYDeerFont(value:CGFloat) -> UIFont{
+    return UIFont.xy.font(size: value)
+}
+/** font  weight*/
+public func XYDeerFontWeight(value:CGFloat, weight:CGFloat) -> UIFont{
+    return UIFont.xy.font(size: value, weight: weight)
 }
