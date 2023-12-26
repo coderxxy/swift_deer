@@ -54,6 +54,7 @@ class XYDeerLoginView: XYBaseView {
     }
     // MARK: loginView base config
     private func loginViewConfig() {
+        self.backgroundColor = .white
         self.titleLab.backgroundColor = UIColor.white;
         self.titleLab.textColor = UIColor.xy.themeBlackColor;
         self.titleLab.font = UIFont.xy.font(size: 18.0, weight: 0.3)

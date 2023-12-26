@@ -17,7 +17,13 @@ class XYDeerOrderTitleView: UIView {
         ["icon":"ywc", "title":"已完成"],
         ["icon":"yqx", "title":"已取消"]
     ]
-    lazy var titleScrollView:UIScrollView = UIScrollView(frame: CGRectZero)
+
+    override var bounds: CGRect{
+        didSet{
+//            self.setupShader(0, 10, xyCommonColor_EEE, self)
+        }
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("")
     }
@@ -66,5 +72,24 @@ class XYDeerOrderTitleView: UIView {
         for btn in self.btns {
             btn.xyImagePosition(type: .imageTop, Space: 15)
         }
+    }
+    /** titleScrollView */
+    lazy var titleScrollView:UIScrollView = {
+        let scrollView = UIScrollView(frame: CGRectZero)
+        return scrollView
+    }()
+    
+    fileprivate func setupShader(_ w: CGFloat, _ h: CGFloat, _ color: UIColor, _ btn: UIView){
+        //设置阴影路径--避免离屏渲染
+        let path = UIBezierPath(rect: btn.bounds)
+        btn.layer.shadowPath = path.cgPath
+        //设置阴影颜色
+        btn.layer.shadowColor = color.cgColor
+        //设置透明度
+        btn.layer.shadowOpacity = 0.5
+        //设置阴影半径
+        btn.layer.shadowRadius = 5.0
+        //设置阴影偏移量
+        btn.layer.shadowOffset = CGSize(width: w, height: h)
     }
 }

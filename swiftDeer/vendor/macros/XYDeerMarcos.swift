@@ -89,3 +89,22 @@ public func XYDeerFont(value:CGFloat) -> UIFont{
 public func XYDeerFontWeight(value:CGFloat, weight:CGFloat) -> UIFont{
     return UIFont.xy.font(size: value, weight: weight)
 }
+/** 计算图片高度 */
+public func XYImgHeight(_ img:UIImage, width:CGFloat) -> CGFloat {
+    let imgScale:Double = img.size.width/img.size.height
+    let height:CGFloat = width/imgScale
+    return height
+}
+/** 计算图片宽度 */
+public func XYImgWidth(_ img:UIImage, height:CGFloat) -> CGFloat {
+    let imgScale:Double = img.size.width/img.size.height
+    let width:CGFloat = imgScale*height
+    return width
+}
+/** 随机色 */
+public func XYRandomColor() -> UIColor{
+    let red = CGFloat(arc4random()%256)/255.0
+    let green = CGFloat(arc4random()%256)/255.0
+    let blue = CGFloat(arc4random()%256)/255.0
+    return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+}

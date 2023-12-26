@@ -33,6 +33,7 @@
 		C1DC4E3B2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3A2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift */; };
 		C1DC4E3D2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */; };
 		C1DC4E3F2B39BD260018D6E3 /* XYDeerOrderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */; };
+		C1DC4E432B3AFF360018D6E3 /* XYDeerOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		C1DC4E3A2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerLoginPresenterExtension.swift; sourceTree = "<group>"; };
 		C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderHeaderView.swift; sourceTree = "<group>"; };
 		C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderTitleView.swift; sourceTree = "<group>"; };
+		C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderView.swift; sourceTree = "<group>"; };
 		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -420,6 +422,7 @@
 			children = (
 				C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */,
 				C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */,
+				C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */,
 				C1DC4DFA2B3083260018D6E3 /* XYTabbar.swift in Sources */,
 				C1DC4E322B37DA4F0018D6E3 /* XYBaseConfig.swift in Sources */,
+				C1DC4E432B3AFF360018D6E3 /* XYDeerOrderView.swift in Sources */,
 				C1DC4E342B38311F0018D6E3 /* XYDeerMarcos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
