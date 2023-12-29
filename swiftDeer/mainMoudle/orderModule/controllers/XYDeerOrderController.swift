@@ -31,11 +31,24 @@ class XYDeerOrderController: XYBaseController {
     // MARK: TOP HEADER VIEW
     lazy var orderTitleView:XYDeerOrderHeaderView = {
         let headerView = XYDeerOrderHeaderView(frame: CGRectZero)
+        // 设置代理
+        headerView.orderHeadrDelegate = (self.deerOrderPresenter as any XYDeerOrderHeaderViewDelegate)
         return headerView
     }()
     // XYDeerOrderView
     lazy var orderHomeView:XYDeerOrderView = {
         let homeView = XYDeerOrderView(frame: CGRectZero)
+        // 设置代理
+        homeView.deerOrderHomeViewDelegate = (self.deerOrderPresenter as any XYDeerOrderViewDelegate)
+        //
+        let tabList:UITableView = homeView.tabListSource[0] as! UITableView
+        tabList.delegate = (self.deerOrderPresenter as any UITableViewDelegate)
+        tabList.dataSource = (self.deerOrderPresenter as any UITableViewDataSource)
         return homeView
+    }()
+    // MARK: presenter
+    lazy var deerOrderPresenter:XYDeerOrderPresenter = {
+        let homePresenter = XYDeerOrderPresenter(self)
+        return homePresenter
     }()
 }

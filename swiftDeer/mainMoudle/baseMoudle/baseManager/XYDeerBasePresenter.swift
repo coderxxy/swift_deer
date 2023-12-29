@@ -10,6 +10,6 @@ import UIKit
 class XYDeerBasePresenter: NSObject {
     weak var controller:UIViewController?
     init (controller: UIViewController){
-        
+        super.init()
     }
 }

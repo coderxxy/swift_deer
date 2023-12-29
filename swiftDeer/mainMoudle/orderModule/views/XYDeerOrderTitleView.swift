@@ -6,8 +6,16 @@
 //
 
 import UIKit
+/** XYDeerOrderTitleViewDelegate */
+@objc protocol XYDeerOrderTitleViewDelegate {
+    /** deerOrderTitleViewClickAction */
+    @objc func deerOrderTitleViewClickAction(selectIdx:Int)
+}
 
 class XYDeerOrderTitleView: UIView {
+    /** <XYDeerOrderTitleViewDelegate> */
+    weak var orderTitleDelegate:XYDeerOrderTitleViewDelegate?
+    private let orderBtnTag:Int = 1000
     // 创建可变数组用于承载 btn子视图
     var btns:Array<UIButton> = Array()
     let titles:Array = [
@@ -23,7 +31,6 @@ class XYDeerOrderTitleView: UIView {
 //            self.setupShader(0, 10, xyCommonColor_EEE, self)
         }
     }
-    
     required init?(coder: NSCoder) {
         fatalError("")
     }
@@ -32,7 +39,7 @@ class XYDeerOrderTitleView: UIView {
         //
         self.titleSubviews()
     }
-    //
+    // MARK: 设置子视图
     func titleSubviews(){
         self.layer.cornerRadius = 8.0
         self.clipsToBounds = true
@@ -43,8 +50,11 @@ class XYDeerOrderTitleView: UIView {
             make.edges.equalTo(self)
         }
         // 遍历添加子视图
-        for titleDic in self.titles {
+        for idx in 0..<self.titles.count {
+            let titleDic = self.titles[idx]
             let titleBtn:UIButton = UIButton(type: .custom)
+            titleBtn.isSelected = (0 == idx) ? true : false
+            titleBtn.tag = idx+orderBtnTag
             titleBtn.setTitle(titleDic["title"], for: .normal)
             titleBtn.titleLabel?.font = XYDeerFont(value: 13.0)
             
@@ -55,6 +65,7 @@ class XYDeerOrderTitleView: UIView {
             titleBtn.setImage(XYDeerImg(imgName: titleDic["icon"]!+"_n"), for: .normal)
             titleBtn.setImage(XYDeerImg(imgName: titleDic["icon"]!+"_s"), for: .selected)
             titleBtn.setImage(XYDeerImg(imgName: titleDic["icon"]!+"_s"), for: .highlighted)
+            titleBtn.addTarget(self, action: #selector(clickEvent(sender:)), for: .touchUpInside)
             self.titleScrollView.addSubview(titleBtn)
             //
             self.btns.append(titleBtn)
@@ -73,12 +84,27 @@ class XYDeerOrderTitleView: UIView {
             btn.xyImagePosition(type: .imageTop, Space: 15)
         }
     }
+    // MARK: 设置当前选中标题
+    func deerTitleDidSelectIdx(idx:NSInteger) {
+        for titleIdx in 0..<self.btns.count {
+            let btn = self.btns[titleIdx]
+            btn.isSelected = (idx == titleIdx) ? true : false
+        }
+    }
+    // MARK: clickEvent
+    @objc func clickEvent(sender:UIButton) {
+        let btnTag = sender.tag - orderBtnTag
+        // 设置当前选中的title
+        self.deerTitleDidSelectIdx(idx: btnTag)
+        // 代理方法
+        self.orderTitleDelegate?.deerOrderTitleViewClickAction(selectIdx: btnTag)
+        XYCommonService.XYDLog("[xy-deer-order]clickIdx:"+"\(btnTag)")
+    }
     /** titleScrollView */
     lazy var titleScrollView:UIScrollView = {
         let scrollView = UIScrollView(frame: CGRectZero)
         return scrollView
     }()
-    
     fileprivate func setupShader(_ w: CGFloat, _ h: CGFloat, _ color: UIColor, _ btn: UIView){
         //设置阴影路径--避免离屏渲染
         let path = UIBezierPath(rect: btn.bounds)

@@ -6,9 +6,17 @@
 //
 
 import UIKit
+/** XYDeerOrderViewDelegate */
+@objc protocol XYDeerOrderViewDelegate {
+    /** did selected index */
+    @objc func deerOrderHomeSelectedIdx(selectedIdx:NSInteger)
+}
 
 class XYDeerOrderView: XYBaseView, UIScrollViewDelegate {
+    var curIdx:Int = 0
     let contentH:CGFloat = XYImgHeight(XYDeerImg(imgName: "order_bg"), width: XYSCREEN_Width)+XYImgHeight(XYDeerImg(imgName: "order_bg1"), width: XYSCREEN_Width)
+    /** deerOrderHomeViewDelegate */
+    weak var deerOrderHomeViewDelegate:XYDeerOrderViewDelegate?
     required init?(coder: NSCoder) {
         fatalError("")
     }
@@ -26,15 +34,20 @@ class XYDeerOrderView: XYBaseView, UIScrollViewDelegate {
     func orderHomeViewSubviews() {
         let listHeight = XYSCREEN_Height-self.contentH-UIDevice.xy_tabBarFullHeight()
         self.addSubview(self.orderScrollView)
-        for idx in 0..<5{
-            let orderList:UIView = UIView(frame: CGRectMake(CGFloat(idx)*XYSCREEN_Width, 0, XYSCREEN_Width, listHeight))
-            orderList.backgroundColor = XYRandomColor()
-            self.orderScrollView.addSubview(orderList)
-            self.tabListSource.append(orderList)
-            XYCommonService.XYDLog("第"+"\(idx)")
-        }
         self.orderScrollView.snp.makeConstraints { make in
             make.top.left.bottom.right.equalTo(self)
+        }
+        for idx in 0..<5{
+//            let orderList:UIView = UIView(frame: CGRectMake(CGFloat(idx)*XYSCREEN_Width, 0, XYSCREEN_Width, listHeight))
+//            orderList.backgroundColor = XYRandomColor()
+//            self.orderScrollView.addSubview(orderList)
+//            self.tabListSource.append(orderList)
+            let rect:CGRect = CGRectMake(CGFloat(idx)*XYSCREEN_Width, 0, XYSCREEN_Width, listHeight)
+            let tabList = self.orderTabHandle(rect: rect)
+            tabList.backgroundColor = XYRandomColor()
+            self.orderScrollView.addSubview(tabList)
+            self.tabListSource.append(tabList)
+            XYCommonService.XYDLog("第"+"\(idx)")
         }
     }
     /** orderScrollView */
@@ -70,13 +83,27 @@ class XYDeerOrderView: XYBaseView, UIScrollViewDelegate {
     }
     // 翻页
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let currentIndex = Int(scrollView.contentOffset.x / UIScreen.main.bounds.size.width)
-        let point:CGPoint = CGPointMake(XYSCREEN_Width*CGFloat(Int(currentIndex)), 0)
+        let currentIndex = NSInteger(scrollView.contentOffset.x / UIScreen.main.bounds.size.width)
+        // 滚动到指定位置
+        self.scrollTabListWithIdx(idx: currentIndex)
+        XYCommonService.XYDLog("第" + "\(currentIndex)" + "页")
+    }
+    // MARK: 滚动到指定tabList
+    func scrollTabListWithIdx(idx:Int) {
+        // 当前idx
+        self.curIdx = idx
+        let point:CGPoint = CGPointMake(XYSCREEN_Width*CGFloat(idx), 0)
         UIView.animate(withDuration: 0.0) {
             self.orderScrollView.setContentOffset(point, animated: true)
         } completion: { Bool in
-            
+            self.deerOrderHomeViewDelegate?.deerOrderHomeSelectedIdx(selectedIdx: idx)
         }
-        XYCommonService.XYDLog("第" + "\(currentIndex)" + "页")
+    }
+    func orderTabHandle(rect:CGRect) -> UITableView{
+        let orderTab = UITableView(frame: rect, style: .plain)
+        orderTab.backgroundColor = UIColor.white
+        orderTab.separatorStyle = .none
+        orderTab.register(XYDeerLatestOrderCell.self, forCellReuseIdentifier: "XYDeerLatestOrderCell")
+        return orderTab
     }
 }

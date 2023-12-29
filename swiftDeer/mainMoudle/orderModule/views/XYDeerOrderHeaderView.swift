@@ -6,8 +6,14 @@
 //
 
 import UIKit
-
-class XYDeerOrderHeaderView: UIView {
+/** XYDeerOrderHeaderViewDelegate */
+@objc protocol XYDeerOrderHeaderViewDelegate {
+    /** deerOrderHeaderSelectIdx */
+    @objc func deerOrderHeaderSelectIdx(selectIdx:Int)
+}
+class XYDeerOrderHeaderView: UIView, XYDeerOrderTitleViewDelegate {
+    /** XYDeerOrderHeaderViewDelegate */
+    weak var orderHeadrDelegate:XYDeerOrderHeaderViewDelegate?
     /** bg image */
     let bgImg:UIImage = XYDeerImg(imgName: "order_bg")
     let circleImg:UIImage = XYDeerImg(imgName: "order_bg1")
@@ -67,6 +73,11 @@ class XYDeerOrderHeaderView: UIView {
         let height:CGFloat = XYSCREEN_Width/imgScale
         return height
     }
+    // MARK: XYDeerOrderTitleViewDelegate
+    func deerOrderTitleViewClickAction(selectIdx: Int) {
+        self.orderHeadrDelegate?.deerOrderHeaderSelectIdx(selectIdx: selectIdx)
+        XYCommonService.XYDLog("[xy-deer-order-header]clickIdx:"+"\(selectIdx)")
+    }
     // MARK: lazy load
     /** background imageView */
     lazy var orderBgImgView:UIImageView = {
@@ -86,6 +97,7 @@ class XYDeerOrderHeaderView: UIView {
     /** title view */
     lazy var titleView:XYDeerOrderTitleView = {
         let orderTitleView = XYDeerOrderTitleView(frame: CGRectZero)
+        orderTitleView.orderTitleDelegate = self
         return orderTitleView
     }()
 }

@@ -34,6 +34,8 @@
 		C1DC4E3D2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */; };
 		C1DC4E3F2B39BD260018D6E3 /* XYDeerOrderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */; };
 		C1DC4E432B3AFF360018D6E3 /* XYDeerOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */; };
+		C1DC4E462B3EC1340018D6E3 /* XYDeerOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E452B3EC1340018D6E3 /* XYDeerOrderPresenter.swift */; };
+		C1DC4E4A2B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E492B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderHeaderView.swift; sourceTree = "<group>"; };
 		C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderTitleView.swift; sourceTree = "<group>"; };
 		C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderView.swift; sourceTree = "<group>"; };
+		C1DC4E452B3EC1340018D6E3 /* XYDeerOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderPresenter.swift; sourceTree = "<group>"; };
+		C1DC4E492B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerLatestOrderCell.swift; sourceTree = "<group>"; };
 		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,6 +153,7 @@
 		C1DC4DE92B3081DB0018D6E3 /* orderModule */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E442B3EC1120018D6E3 /* presenters */,
 				C1DC4E152B3084CC0018D6E3 /* utils */,
 				C1DC4E162B3084CC0018D6E3 /* views */,
 				C1DC4E002B30838C0018D6E3 /* controllers */,
@@ -423,6 +428,7 @@
 				C1DC4E3C2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift */,
 				C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */,
 				C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */,
+				C1DC4E492B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -479,6 +485,14 @@
 				C1DC4E3A2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift */,
 			);
 			path = presenter;
+			sourceTree = "<group>";
+		};
+		C1DC4E442B3EC1120018D6E3 /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E452B3EC1340018D6E3 /* XYDeerOrderPresenter.swift */,
+			);
+			path = presenters;
 			sourceTree = "<group>";
 		};
 		D1E96E5875C3BA455138D7CC /* Frameworks */ = {
@@ -606,6 +620,7 @@
 			files = (
 				C1DC4E242B3087A10018D6E3 /* XYDeerTotalsController.swift in Sources */,
 				C1DC4DFC2B3083490018D6E3 /* XYBaseNavigationBar.swift in Sources */,
+				C1DC4E462B3EC1340018D6E3 /* XYDeerOrderPresenter.swift in Sources */,
 				C1DC4E392B3860A90018D6E3 /* XYDeerBasePresenter.swift in Sources */,
 				C1DC4E3D2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift in Sources */,
 				C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */,
@@ -619,6 +634,7 @@
 				C1DC4E1C2B3087350018D6E3 /* XYDeerLoginController.swift in Sources */,
 				C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */,
 				C1DC4DF22B3082AA0018D6E3 /* XYBaseView.swift in Sources */,
+				C1DC4E4A2B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift in Sources */,
 				C1DC4E2A2B36CA110018D6E3 /* XYDeerLoginView.swift in Sources */,
 				C1DC4E202B3087750018D6E3 /* XYDeerOrderController.swift in Sources */,
 				C1DC4DF62B3082DF0018D6E3 /* XYBaseNavigationController.swift in Sources */,
