@@ -44,7 +44,7 @@ class XYDeerOrderView: XYBaseView, UIScrollViewDelegate {
 //            self.tabListSource.append(orderList)
             let rect:CGRect = CGRectMake(CGFloat(idx)*XYSCREEN_Width, 0, XYSCREEN_Width, listHeight)
             let tabList = self.orderTabHandle(rect: rect)
-            tabList.backgroundColor = XYRandomColor()
+//            tabList.backgroundColor = XYRandomColor()
             self.orderScrollView.addSubview(tabList)
             self.tabListSource.append(tabList)
             XYCommonService.XYDLog("第"+"\(idx)")
@@ -100,8 +100,8 @@ class XYDeerOrderView: XYBaseView, UIScrollViewDelegate {
         }
     }
     func orderTabHandle(rect:CGRect) -> UITableView{
-        let orderTab = UITableView(frame: rect, style: .plain)
-        orderTab.backgroundColor = UIColor.white
+        let orderTab = UITableView(frame: rect, style: .grouped)
+        orderTab.backgroundColor = xyCommonColor_EEE//UIColor.white
         orderTab.separatorStyle = .none
         orderTab.register(XYDeerLatestOrderCell.self, forCellReuseIdentifier: "XYDeerLatestOrderCell")
         return orderTab

@@ -36,6 +36,11 @@
 		C1DC4E432B3AFF360018D6E3 /* XYDeerOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */; };
 		C1DC4E462B3EC1340018D6E3 /* XYDeerOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E452B3EC1340018D6E3 /* XYDeerOrderPresenter.swift */; };
 		C1DC4E4A2B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E492B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift */; };
+		C1DC4E4C2B3FC4FF0018D6E3 /* XYDeerOrderTabSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E4B2B3FC4FF0018D6E3 /* XYDeerOrderTabSectionHeader.swift */; };
+		C1DC4E4F2B3FFCA70018D6E3 /* XYDeerOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E4E2B3FFCA70018D6E3 /* XYDeerOrderModel.swift */; };
+		C1DC4E512B4004CD0018D6E3 /* XYDeerOrderPresenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E502B4004CD0018D6E3 /* XYDeerOrderPresenterExtension.swift */; };
+		C1DC4E532B400C1D0018D6E3 /* XYDeerOrderPresenterRefreshCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E522B400C1D0018D6E3 /* XYDeerOrderPresenterRefreshCellExtension.swift */; };
+		C1DC4E552B4027630018D6E3 /* XYBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E542B4027630018D6E3 /* XYBaseTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderView.swift; sourceTree = "<group>"; };
 		C1DC4E452B3EC1340018D6E3 /* XYDeerOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderPresenter.swift; sourceTree = "<group>"; };
 		C1DC4E492B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerLatestOrderCell.swift; sourceTree = "<group>"; };
+		C1DC4E4B2B3FC4FF0018D6E3 /* XYDeerOrderTabSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderTabSectionHeader.swift; sourceTree = "<group>"; };
+		C1DC4E4E2B3FFCA70018D6E3 /* XYDeerOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderModel.swift; sourceTree = "<group>"; };
+		C1DC4E502B4004CD0018D6E3 /* XYDeerOrderPresenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderPresenterExtension.swift; sourceTree = "<group>"; };
+		C1DC4E522B400C1D0018D6E3 /* XYDeerOrderPresenterRefreshCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerOrderPresenterRefreshCellExtension.swift; sourceTree = "<group>"; };
+		C1DC4E542B4027630018D6E3 /* XYBaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseTableCell.swift; sourceTree = "<group>"; };
 		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +163,7 @@
 		C1DC4DE92B3081DB0018D6E3 /* orderModule */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E4D2B3FFC760018D6E3 /* models */,
 				C1DC4E442B3EC1120018D6E3 /* presenters */,
 				C1DC4E152B3084CC0018D6E3 /* utils */,
 				C1DC4E162B3084CC0018D6E3 /* views */,
@@ -197,6 +208,7 @@
 				C1DC4DF12B3082AA0018D6E3 /* XYBaseView.swift */,
 				C1DC4DF92B3083260018D6E3 /* XYTabbar.swift */,
 				C1DC4DFB2B3083490018D6E3 /* XYBaseNavigationBar.swift */,
+				C1DC4E542B4027630018D6E3 /* XYBaseTableCell.swift */,
 			);
 			path = baseViewModule;
 			sourceTree = "<group>";
@@ -429,6 +441,7 @@
 				C1DC4E3E2B39BD260018D6E3 /* XYDeerOrderTitleView.swift */,
 				C1DC4E422B3AFF360018D6E3 /* XYDeerOrderView.swift */,
 				C1DC4E492B3F11D10018D6E3 /* XYDeerLatestOrderCell.swift */,
+				C1DC4E4B2B3FC4FF0018D6E3 /* XYDeerOrderTabSectionHeader.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -491,8 +504,18 @@
 			isa = PBXGroup;
 			children = (
 				C1DC4E452B3EC1340018D6E3 /* XYDeerOrderPresenter.swift */,
+				C1DC4E502B4004CD0018D6E3 /* XYDeerOrderPresenterExtension.swift */,
+				C1DC4E522B400C1D0018D6E3 /* XYDeerOrderPresenterRefreshCellExtension.swift */,
 			);
 			path = presenters;
+			sourceTree = "<group>";
+		};
+		C1DC4E4D2B3FFC760018D6E3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E4E2B3FFCA70018D6E3 /* XYDeerOrderModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		D1E96E5875C3BA455138D7CC /* Frameworks */ = {
@@ -622,15 +645,19 @@
 				C1DC4DFC2B3083490018D6E3 /* XYBaseNavigationBar.swift in Sources */,
 				C1DC4E462B3EC1340018D6E3 /* XYDeerOrderPresenter.swift in Sources */,
 				C1DC4E392B3860A90018D6E3 /* XYDeerBasePresenter.swift in Sources */,
+				C1DC4E512B4004CD0018D6E3 /* XYDeerOrderPresenterExtension.swift in Sources */,
 				C1DC4E3D2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift in Sources */,
 				C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */,
 				C1DC4E222B3087900018D6E3 /* XYDeerProductsController.swift in Sources */,
 				C1DC4E3B2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift in Sources */,
+				C1DC4E4C2B3FC4FF0018D6E3 /* XYDeerOrderTabSectionHeader.swift in Sources */,
 				C1DC4DF82B3082F90018D6E3 /* XYBaseTabbarController.swift in Sources */,
 				C1DC4E1E2B3087520018D6E3 /* XYDeerRegisterController.swift in Sources */,
+				C1DC4E4F2B3FFCA70018D6E3 /* XYDeerOrderModel.swift in Sources */,
 				C1DC4DF42B3082C10018D6E3 /* XYBaseController.swift in Sources */,
 				C1DC4E372B385F400018D6E3 /* XYDeerLoginPresenter.swift in Sources */,
 				C1DC4E3F2B39BD260018D6E3 /* XYDeerOrderTitleView.swift in Sources */,
+				C1DC4E532B400C1D0018D6E3 /* XYDeerOrderPresenterRefreshCellExtension.swift in Sources */,
 				C1DC4E1C2B3087350018D6E3 /* XYDeerLoginController.swift in Sources */,
 				C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */,
 				C1DC4DF22B3082AA0018D6E3 /* XYBaseView.swift in Sources */,
@@ -640,6 +667,7 @@
 				C1DC4DF62B3082DF0018D6E3 /* XYBaseNavigationController.swift in Sources */,
 				C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */,
 				C1DC4DFA2B3083260018D6E3 /* XYTabbar.swift in Sources */,
+				C1DC4E552B4027630018D6E3 /* XYBaseTableCell.swift in Sources */,
 				C1DC4E322B37DA4F0018D6E3 /* XYBaseConfig.swift in Sources */,
 				C1DC4E432B3AFF360018D6E3 /* XYDeerOrderView.swift in Sources */,
 				C1DC4E342B38311F0018D6E3 /* XYDeerMarcos.swift in Sources */,

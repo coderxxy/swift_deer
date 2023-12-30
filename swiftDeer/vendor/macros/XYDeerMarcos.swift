@@ -11,7 +11,7 @@ import Foundation
 /** xyThememColor */
 let xyAppThememColor:UIColor = color(colorValue: "#5f5ff5")
 /** tip color ea4c51 */
-let xyWarmingColor:UIColor = color(colorValue: "ea4c51")
+let xyWarmingColor:UIColor = color(colorValue: "#ea4c51")
 /** xyCommonColor_888 */
 let xyCommonColor_888:UIColor = color(colorValue: "#888888")
 /** xyCommonColor_333 */
@@ -20,6 +20,8 @@ let xyCommonColor_333:UIColor = color(colorValue: "#333333")
 let xyCommonColor_FFF:UIColor = color(colorValue: "#FFFFFF")
 /** xyCommonColor_EEE */
 let xyCommonColor_EEE:UIColor = color(colorValue: "#EEEEEE")
+/** xyCommontBtnColor_5d74f5 */
+let xyCommontBtnColor_5d74f5: UIColor = color(colorValue: "#5d74f5")
 
 /** titleColor */
 let xyTitleColor:UIColor = xyCommonColor_333

@@ -79,7 +79,7 @@ class XYDeerLoginView: XYBaseView {
         self.findPwdBtn.titleLabel?.font = UIFont.xy.font(size: 12.0)
         
         self.codeBtn.backgroundColor = .white
-        self.loginBtn.backgroundColor = xyAppThememColor
+        self.loginBtn.backgroundColor = xyCommontBtnColor_5d74f5
         
         self.codeBtn.setTitleColor(xyAppThememColor, for: .normal)
         self.codeBtn.setTitleColor(xyAppThememColor, for: .highlighted)

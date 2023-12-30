@@ -8,6 +8,7 @@
 import UIKit
 
 class XYDeerOrderController: XYBaseController {
+    var curTabList: UITableView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -44,6 +45,7 @@ class XYDeerOrderController: XYBaseController {
         let tabList:UITableView = homeView.tabListSource[0] as! UITableView
         tabList.delegate = (self.deerOrderPresenter as any UITableViewDelegate)
         tabList.dataSource = (self.deerOrderPresenter as any UITableViewDataSource)
+        self.curTabList = tabList
         return homeView
     }()
     // MARK: presenter

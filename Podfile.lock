@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.8.1)
   - IQKeyboardManagerSwift (6.5.11)
+  - KakaJSON (1.1.2)
   - SnapKit (5.6.0)
   - SnapKitExtend (1.1.0):
     - SnapKit
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
+  - KakaJSON (~> 1.1.2)
   - SnapKit
   - SnapKitExtend
   - XYUIKit-Swift (from `https://github.com/coderXXY/XYUIKit-Swift.git`, branch `master`)
@@ -17,6 +19,7 @@ SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
     - IQKeyboardManagerSwift
+    - KakaJSON
     - SnapKit
     - SnapKitExtend
 
@@ -27,16 +30,17 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   XYUIKit-Swift:
-    :commit: 11a0912666c7bd9c533ab31649868e55d31d024e
+    :commit: 429da550e11ae6245ddc43859b55878372cdd15b
     :git: https://github.com/coderXXY/XYUIKit-Swift.git
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SnapKitExtend: aa30cf37196195fae9c4354686cc7710184ebfcc
   XYUIKit-Swift: d6d03ccf3e212181c390207d7774934c0ce1435a
 
-PODFILE CHECKSUM: aea90a0fcf36e36d0f2e7d438e114b1640c8e87c
+PODFILE CHECKSUM: 772539970748506e8d563adf6823a307d8343ac3
 
 COCOAPODS: 1.11.3
