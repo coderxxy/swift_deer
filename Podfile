@@ -9,6 +9,7 @@ target 'swiftDeer' do
   pod 'SnapKitExtend'
   pod 'IQKeyboardManagerSwift'
   pod 'XYUIKit-Swift', :git=>'https://github.com/coderXXY/XYUIKit-Swift.git', :branch => 'master'
+  pod 'KakaJSON', '~> 1.1.2'    # json 模型转换
 #  pod 'SCLAlertView'			# alert
   
 end

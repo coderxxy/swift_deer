@@ -19,7 +19,7 @@ class XYDeerLoginController: XYBaseController {
     }
     func loginConfigHandle() {
 //        self.navigationItem.title = "登陆";
-        self.loginView.deerLoginViewDelegate = (self.loginPresenter as? any XYDeerLoginViewDelegate)
+        self.loginView.deerLoginViewDelegate = (self.loginPresenter as XYDeerLoginViewDelegate)
     }
     func loginSubviewsHandle() {
         self.view.addSubview(self.loginView)

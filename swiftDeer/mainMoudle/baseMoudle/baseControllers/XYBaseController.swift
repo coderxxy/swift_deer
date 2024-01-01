@@ -21,7 +21,7 @@ class XYBaseController: UIViewController {
     }
     // 基础配置
     func deerBaseControllerConfig() {
-        self.view.backgroundColor = UIColor.white;
+        self.view.backgroundColor = xyCommonColor_EEE//UIColor.white;
     }
     
 

@@ -11,7 +11,7 @@ import Foundation
 /** xyThememColor */
 let xyAppThememColor:UIColor = color(colorValue: "#5f5ff5")
 /** tip color ea4c51 */
-let xyWarmingColor:UIColor = color(colorValue: "ea4c51")
+let xyWarmingColor:UIColor = color(colorValue: "#ea4c51")
 /** xyCommonColor_888 */
 let xyCommonColor_888:UIColor = color(colorValue: "#888888")
 /** xyCommonColor_333 */
@@ -20,6 +20,8 @@ let xyCommonColor_333:UIColor = color(colorValue: "#333333")
 let xyCommonColor_FFF:UIColor = color(colorValue: "#FFFFFF")
 /** xyCommonColor_EEE */
 let xyCommonColor_EEE:UIColor = color(colorValue: "#EEEEEE")
+/** xyCommontBtnColor_5d74f5 */
+let xyCommontBtnColor_5d74f5: UIColor = color(colorValue: "#5d74f5")
 
 /** titleColor */
 let xyTitleColor:UIColor = xyCommonColor_333
@@ -60,8 +62,19 @@ let XYCommonPadding_25 : CGFloat = 25.0
 let XYCommonPadding_30 : CGFloat = 30.0
 /** common max Padding */
 let XYCommonMaxPadding : CGFloat = 20.0
-/** common subPadding */
+/** common subPadding, 5.0 */
 let XYCommonMinPadding : CGFloat = 5.0
+
+/** XYSCREEN_W */
+let XYSCREEN_Width = UIScreen.main.bounds.size.width
+/** XYSCREEN_H */
+let XYSCREEN_Height = UIScreen.main.bounds.size.height
+
+// MARK: common method
+/** image with name */
+public func XYDeerImg(imgName:String)->UIImage{
+    return UIImage(named: imgName)!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+}
 // MARK: - 颜色
 public func color(colorValue:String) -> UIColor{
     return UIColor.xy.hexStringToColor(hexString: colorValue)
@@ -69,4 +82,31 @@ public func color(colorValue:String) -> UIColor{
 // MARK: 颜色 可设置透明度
 public func colorAlpha(colorValue:String, alpha:CGFloat) -> UIColor {
     return UIColor.xy.hexStringToColor(hexString: colorValue, alpha: alpha)
+}
+/** font */
+public func XYDeerFont(value:CGFloat) -> UIFont{
+    return UIFont.xy.font(size: value)
+}
+/** font  weight*/
+public func XYDeerFontWeight(value:CGFloat, weight:CGFloat) -> UIFont{
+    return UIFont.xy.font(size: value, weight: weight)
+}
+/** 计算图片高度 */
+public func XYImgHeight(_ img:UIImage, width:CGFloat) -> CGFloat {
+    let imgScale:Double = img.size.width/img.size.height
+    let height:CGFloat = width/imgScale
+    return height
+}
+/** 计算图片宽度 */
+public func XYImgWidth(_ img:UIImage, height:CGFloat) -> CGFloat {
+    let imgScale:Double = img.size.width/img.size.height
+    let width:CGFloat = imgScale*height
+    return width
+}
+/** 随机色 */
+public func XYRandomColor() -> UIColor{
+    let red = CGFloat(arc4random()%256)/255.0
+    let green = CGFloat(arc4random()%256)/255.0
+    let blue = CGFloat(arc4random()%256)/255.0
+    return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
 }

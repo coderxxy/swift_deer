@@ -17,7 +17,7 @@ class XYBaseTabbarController: UITabBarController {
     // MARK: tabbarItems [order\goods\totals\shop]
     func tabbarItmesEvent() {
         //
-        UITabBar.appearance().backgroundColor = color(colorValue: "#E2DFD5")//THEMECOLOR()
+        UITabBar.appearance().backgroundColor = .white//color(colorValue: "#E2DFD5")//THEMECOLOR()
         UITabBar.appearance().backgroundImage = UIImage()
         // 取消顶部横线
         UITabBar.appearance().shadowImage = UIImage()

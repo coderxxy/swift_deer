@@ -54,6 +54,7 @@ class XYDeerLoginView: XYBaseView {
     }
     // MARK: loginView base config
     private func loginViewConfig() {
+        self.backgroundColor = .white
         self.titleLab.backgroundColor = UIColor.white;
         self.titleLab.textColor = UIColor.xy.themeBlackColor;
         self.titleLab.font = UIFont.xy.font(size: 18.0, weight: 0.3)
@@ -78,7 +79,7 @@ class XYDeerLoginView: XYBaseView {
         self.findPwdBtn.titleLabel?.font = UIFont.xy.font(size: 12.0)
         
         self.codeBtn.backgroundColor = .white
-        self.loginBtn.backgroundColor = xyAppThememColor
+        self.loginBtn.backgroundColor = xyCommontBtnColor_5d74f5
         
         self.codeBtn.setTitleColor(xyAppThememColor, for: .normal)
         self.codeBtn.setTitleColor(xyAppThememColor, for: .highlighted)
