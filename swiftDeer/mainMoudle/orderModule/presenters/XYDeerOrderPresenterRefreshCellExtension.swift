@@ -46,6 +46,46 @@ extension XYDeerOrderPresenter{
         cell.subGoodsLabel.text = subGoods
         cell.priceLabel.text = priceStr
         cell.orderDateLabel.text = orderModel.orderTime
+        var btnTitle: String?
+        // 【拒单】 接单 开始配送 完成
+        switch self.orderType?.rawValue {
+        case 0:
+            btnTitle = "接单"
+            self.cellBtnColor(bgColor: xyAppThememColor, titleColor: xyCommonColor_FFF, btn: cell.acceptBtn)
+            break
+        case 1:
+            btnTitle = "开始配送"
+            self.cellBtnColor(bgColor: xyAppThememColor, titleColor: xyCommonColor_FFF, btn: cell.acceptBtn)
+            break
+        case 2:
+            self.cellBtnColor(bgColor: xyAppThememColor, titleColor: xyCommonColor_FFF, btn: cell.acceptBtn)
+            cell.rejectBtn.setTitle("订单追踪", for: .normal)
+            btnTitle = "完成"
+            let rejectSize: CGSize = String.xy.stringSize(string: "订单追踪")
+            cell.rejectBtn.snp.updateConstraints { make in
+                make.width.equalTo(rejectSize.width + 30)
+            }
+            break
+        case 3:
+            cell.rejectBtn.isHidden = true
+            btnTitle = "订单跟踪"
+            self.cellBtnColor(bgColor: xyCommonColor_EEE, titleColor: xyTitleColor, btn: cell.acceptBtn)
+            break
+        case 4:
+            cell.rejectBtn.isHidden = true
+            btnTitle = "订单跟踪"
+            self.cellBtnColor(bgColor: xyCommonColor_EEE, titleColor: xyTitleColor, btn: cell.acceptBtn)
+            break
+        default:
+            break
+        }
+        let acceptSize: CGSize = String.xy.stringSize(string: btnTitle!, fontValue: 15.0, weight: 0)
+        cell.acceptBtn.setTitle(btnTitle, for: .normal)
+        cell.acceptBtn.snp.updateConstraints { make in
+            make.width.equalTo(acceptSize.width + 30)
+        }
+        
+        // 已完成、已取消 拒单隐藏+订单跟踪
         // update cell layout
         if !mobile.isEmpty  {
             let mobileSize: CGSize = String.xy.getStringSize(string: mobile)
@@ -72,5 +112,9 @@ extension XYDeerOrderPresenter{
             }
             cell.contentView.layoutIfNeeded()
         }
+    }
+    private func cellBtnColor(bgColor: UIColor, titleColor: UIColor, btn: UIButton){
+        btn.backgroundColor = bgColor
+        btn.setTitleColor(titleColor, for: .normal)
     }
 }

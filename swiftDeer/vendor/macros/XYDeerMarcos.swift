@@ -62,7 +62,7 @@ let XYCommonPadding_25 : CGFloat = 25.0
 let XYCommonPadding_30 : CGFloat = 30.0
 /** common max Padding */
 let XYCommonMaxPadding : CGFloat = 20.0
-/** common subPadding */
+/** common subPadding, 5.0 */
 let XYCommonMinPadding : CGFloat = 5.0
 
 /** XYSCREEN_W */

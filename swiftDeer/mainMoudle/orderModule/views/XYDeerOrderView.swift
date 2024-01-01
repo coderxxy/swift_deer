@@ -9,7 +9,7 @@ import UIKit
 /** XYDeerOrderViewDelegate */
 @objc protocol XYDeerOrderViewDelegate {
     /** did selected index */
-    @objc func deerOrderHomeSelectedIdx(selectedIdx:NSInteger)
+    @objc func deerOrderHomeSelectedIdx(selectedIdx: Int)
 }
 
 class XYDeerOrderView: XYBaseView, UIScrollViewDelegate {

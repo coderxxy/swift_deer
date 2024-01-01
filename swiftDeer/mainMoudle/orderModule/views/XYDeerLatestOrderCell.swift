@@ -9,15 +9,16 @@ import UIKit
 /** XYDeerLatestOrderCellDelegate */
 @objc protocol XYDeerLatestOrderCellDelegate{
     /** 联系客户 */
-    @objc func linkAction(_ sender: UIButton)
+    @objc func linkAction(_ sender: UIButton, idxPath: IndexPath)
     /** 拒单 */
-    @objc func rejecptAction(_ sender: UIButton)
+    @objc func rejecptAction(_ sender: UIButton, idxPath: IndexPath)
     /** 接单 */
-    @objc func acceptAction(_ sender: UIButton)
+    @objc func acceptAction(_ sender: UIButton, idxPath: IndexPath)
 }
 class XYDeerLatestOrderCell: XYBaseTableCell {
     /** XYDeerLatestOrderCellDelegate */
     weak var cellDelegate: XYDeerLatestOrderCellDelegate?
+    var cellIdxPath: IndexPath? = nil
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.cellSubviewsHandle()
@@ -93,36 +94,36 @@ class XYDeerLatestOrderCell: XYBaseTableCell {
         self.linkBtn.snp.makeConstraints { make in
             make.top.equalTo(self.subSeparatorLine.snp.bottom).offset(XYCommonPadding_10)
             make.left.equalTo(self.subSeparatorLine)
-            make.width.equalTo(linkSize.width + 40)
+            make.width.equalTo(linkSize.width + 30)
             make.height.equalTo(linkSize.height + 15)
             make.bottom.equalTo(self.cellContentView.snp.bottom).offset(-XYCommonPadding_20)
         }
         self.acceptBtn.snp.makeConstraints { make in
             make.centerY.equalTo(self.linkBtn)
-            make.width.equalTo(rejectSize.width + 40)
+            make.width.equalTo(acceptSize.width + 30)
             make.height.equalTo(linkBtn.snp.height)
             make.right.equalTo(self.cellContentView.snp.right).offset(-XYCommonPadding_20)
         }
         self.rejectBtn.snp.makeConstraints { make in
             make.centerY.equalTo(self.linkBtn)
-            make.width.equalTo(rejectSize.width + 40)
+            make.width.equalTo(rejectSize.width + 30)
             make.height.equalTo(linkBtn.snp.height)
             make.right.equalTo(self.acceptBtn.snp.left).offset(-XYCommonPadding_15)
         }
     }
     // MARK: linkEvent
     @objc func linkEvent(sender: UIButton){
-        self.cellDelegate?.linkAction(sender)
+        self.cellDelegate?.linkAction(sender, idxPath:self.cellIdxPath!)
         XYCommonService.XYDLog("[xy][order-cell-linkEvent]")
     }
     // MARK: turned down
     @objc func turnedDownEvent(sender: UIButton){
-        self.cellDelegate?.rejecptAction(sender)
+        self.cellDelegate?.rejecptAction(sender, idxPath:self.cellIdxPath!)
         XYCommonService.XYDLog("[xy][order-cell-turnedDownEvent]")
     }
     // MARK: acceptEvent
     @objc func acceptEvent(sender: UIButton){
-        self.cellDelegate?.acceptAction(sender)
+        self.cellDelegate?.acceptAction(sender, idxPath:self.cellIdxPath!)
         XYCommonService.XYDLog("[xy][order-cell-acceptEvent]")
     }
     /** addressLabel */
