@@ -87,6 +87,7 @@ class XYDeerOrderPresenter: NSObject, XYDeerOrderViewDelegate, XYDeerOrderHeader
                     UIApplication.shared.openURL(mobileUrl!)
                 }
                 else {
+                    XYAlertView().xyShoWToast(msg: "无法找到合适的电话应用程序")
                     XYCommonService.XYDLog("无法找到合适的电话应用程序")
                 }
             }

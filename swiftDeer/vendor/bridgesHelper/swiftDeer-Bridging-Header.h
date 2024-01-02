@@ -14,5 +14,6 @@
 #import <IQKeyboardManagerSwift/IQKeyboardManagerSwift-Swift.h>
 #import <XYUIKit_Swift/XYUIKit_Swift-Swift.h>
 #import <KakaJSON/KakaJSON-Swift.h>
+#import <DGCharts/DGCharts-Swift.h>
 
 #endif /* swiftDeer_Bridging_Header_h */

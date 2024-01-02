@@ -44,6 +44,8 @@
 		C1DC4E582B4105000018D6E3 /* XYAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E572B4105000018D6E3 /* XYAlertManager.swift */; };
 		C1DC4E5B2B4105430018D6E3 /* XYAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E5A2B4105430018D6E3 /* XYAlertView.swift */; };
 		C1DC4E612B42F0030018D6E3 /* XYDeerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E602B42F0030018D6E3 /* XYDeerEnum.swift */; };
+		C1DC4E642B443EF00018D6E3 /* OrderStatisticsBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E632B443EF00018D6E3 /* OrderStatisticsBgView.swift */; };
+		C1DC4E672B443FCF0018D6E3 /* XYDeerCommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4E662B443FCF0018D6E3 /* XYDeerCommonUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		C1DC4E572B4105000018D6E3 /* XYAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYAlertManager.swift; sourceTree = "<group>"; };
 		C1DC4E5A2B4105430018D6E3 /* XYAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYAlertView.swift; sourceTree = "<group>"; };
 		C1DC4E602B42F0030018D6E3 /* XYDeerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerEnum.swift; sourceTree = "<group>"; };
+		C1DC4E632B443EF00018D6E3 /* OrderStatisticsBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatisticsBgView.swift; sourceTree = "<group>"; };
+		C1DC4E662B443FCF0018D6E3 /* XYDeerCommonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerCommonUtil.swift; sourceTree = "<group>"; };
 		F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,6 +195,7 @@
 		C1DC4DEB2B3082010018D6E3 /* totalsModule */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E622B443DA50018D6E3 /* presenters */,
 				C1DC4E122B3084BC0018D6E3 /* utils */,
 				C1DC4E112B3084BC0018D6E3 /* views */,
 				C1DC4DFE2B3083780018D6E3 /* controllers */,
@@ -408,6 +413,7 @@
 		C1DC4E112B3084BC0018D6E3 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E632B443EF00018D6E3 /* OrderStatisticsBgView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -529,6 +535,7 @@
 		C1DC4E562B4104A40018D6E3 /* commonService */ = {
 			isa = PBXGroup;
 			children = (
+				C1DC4E652B443FAD0018D6E3 /* commonTools */,
 				C1DC4E592B4105250018D6E3 /* xyAlert */,
 			);
 			path = commonService;
@@ -541,6 +548,21 @@
 				C1DC4E5A2B4105430018D6E3 /* XYAlertView.swift */,
 			);
 			path = xyAlert;
+			sourceTree = "<group>";
+		};
+		C1DC4E622B443DA50018D6E3 /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenters;
+			sourceTree = "<group>";
+		};
+		C1DC4E652B443FAD0018D6E3 /* commonTools */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC4E662B443FCF0018D6E3 /* XYDeerCommonUtil.swift */,
+			);
+			path = commonTools;
 			sourceTree = "<group>";
 		};
 		D1E96E5875C3BA455138D7CC /* Frameworks */ = {
@@ -667,10 +689,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1DC4E242B3087A10018D6E3 /* XYDeerTotalsController.swift in Sources */,
+				C1DC4E672B443FCF0018D6E3 /* XYDeerCommonUtil.swift in Sources */,
 				C1DC4DFC2B3083490018D6E3 /* XYBaseNavigationBar.swift in Sources */,
 				C1DC4E612B42F0030018D6E3 /* XYDeerEnum.swift in Sources */,
 				C1DC4E462B3EC1340018D6E3 /* XYDeerOrderPresenter.swift in Sources */,
 				C1DC4E392B3860A90018D6E3 /* XYDeerBasePresenter.swift in Sources */,
+				C1DC4E642B443EF00018D6E3 /* OrderStatisticsBgView.swift in Sources */,
 				C1DC4E512B4004CD0018D6E3 /* XYDeerOrderPresenterExtension.swift in Sources */,
 				C1DC4E3D2B39AA8D0018D6E3 /* XYDeerOrderHeaderView.swift in Sources */,
 				C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */,
@@ -860,7 +884,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -892,7 +916,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

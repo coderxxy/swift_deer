@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.8.1)
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
   - IQKeyboardManagerSwift (6.5.11)
   - KakaJSON (1.1.2)
   - SnapKit (5.6.0)
@@ -9,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - DGCharts
   - IQKeyboardManagerSwift
   - KakaJSON (~> 1.1.2)
   - SnapKit
@@ -18,6 +22,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
+    - DGCharts
     - IQKeyboardManagerSwift
     - KakaJSON
     - SnapKit
@@ -35,12 +40,13 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SnapKitExtend: aa30cf37196195fae9c4354686cc7710184ebfcc
   XYUIKit-Swift: d6d03ccf3e212181c390207d7774934c0ce1435a
 
-PODFILE CHECKSUM: 772539970748506e8d563adf6823a307d8343ac3
+PODFILE CHECKSUM: 0b146f389f273ae539b979c77378a47707161b09
 
 COCOAPODS: 1.11.3

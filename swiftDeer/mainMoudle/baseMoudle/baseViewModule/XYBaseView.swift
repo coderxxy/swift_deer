@@ -24,11 +24,14 @@ class XYBaseView: UIView {
     /** title label */
     lazy var titleLab:UILabel = {
         let titleLabel = UILabel(frame: CGRectZero);
+        titleLabel.textAlignment = .center
+        titleLabel.numberOfLines = 0
         return titleLabel
     }()
     /** sub title label */
     lazy var subTitleLab:UILabel = {
         let subTitleLabel = UILabel(frame: CGRectZero);
+        subTitleLabel.textAlignment = .center
         return subTitleLabel
     }()
     /** detail label */
