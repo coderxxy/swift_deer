@@ -130,6 +130,7 @@ class XYAlertView: UIView {
         let contentView: UIView = UIView(frame: CGRectZero)
         contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 5.0
+        contentView.clipsToBounds = true
         return contentView
     }()
     // MARK: title label

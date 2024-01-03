@@ -21,14 +21,14 @@ class XYDeerLoginView: XYBaseView {
     /** <XYDeerLoginViewDelegate>deerLoginViewDelegate */
     weak var deerLoginViewDelegate:(XYDeerLoginViewDelegate)?
     // 主标题
-    let loginTitleContent = "验证码登录"
+    private let loginTitleContent = "验证码登录"
     // placeHolder
-    let userPlaceHolder = "请输入账号"
-    let pwdPlaceHolder = "请输入验证码"
-    let codeTitle = "获取验证码"
-    let loginTitle = "登 录"
-    let tipTxt = "提示：未注册账号的手机号，请先注册。"
-    let findPwdTxt = "忘记密码"
+    private let userPlaceHolder = "请输入账号"
+    private let pwdPlaceHolder = "请输入验证码"
+    private let codeTitle = "获取验证码"
+    private let loginTitle = "登 录"
+    private let tipTxt = "提示：未注册账号的手机号，请先注册。"
+    private let findPwdTxt = "忘记密码"
     // MARK: subviews
     // 文本输入框
     lazy var userTFeild:UITextField = UITextField(frame: CGRectZero)
