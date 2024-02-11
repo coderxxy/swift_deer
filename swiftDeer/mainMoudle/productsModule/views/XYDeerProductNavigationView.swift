@@ -12,7 +12,7 @@ import UIKit
     @objc func selectedIdx(idx:Int)
 }
 
-class XYDeerProductNavigationView: XYBaseView, UIScrollViewDelegate {
+class XYDeerProductNavigationView: XYBaseView, UIScrollViewDelegate, XYDeerSKUMenuViewDelegate {
     weak var delegate: XYDeerProductNavigationViewDelegate?
     private let titles:Array<String> = ["在售", "待售", "下架"]
     private var selectedBtn:UIButton?
@@ -104,10 +104,14 @@ class XYDeerProductNavigationView: XYBaseView, UIScrollViewDelegate {
             window.backgroundColor = xyCommonColor_333.withAlphaComponent(0.2)
             self.menuView.skuMenuTab.reloadData()
             window.addSubview(self.menuView)
+            let titleHeight = String.xy.getStringSize(string: self.menuView.skuSource[0]).height
+            let cellHeight:Int = (20 + Int(titleHeight))*self.menuView.skuSource.count
+            let space:Int = Int(XYSCREEN_Height-44-40-UIDevice.xy_statusBarHeight())
+            let listHeight = min(cellHeight, space)
             self.menuView.snp.makeConstraints { make in
                 make.top.equalTo(self.skuTitleBtn.snp.bottom)
                 make.left.right.equalTo(self)
-                make.height.equalTo(XYSCREEN_Height/2)
+                make.height.equalTo(listHeight)
             }
         }
         else{
@@ -137,6 +141,18 @@ class XYDeerProductNavigationView: XYBaseView, UIScrollViewDelegate {
         // 处理delegate
         self.delegate?.selectedIdx(idx: idx)
         XYAlertView().xyShoWToast(msg: self.titles[idx])
+    }
+    // MARK: XYDeerSKUMenuViewDelegate
+    func didSelectedCell(title: String) {
+        self.skuTitleBtn.isSelected = false
+        self.skuTitleBtn.setTitle(title, for: .normal)
+        let btnSize:CGSize = String.xy.getStringSize(string: title)
+        self.skuTitleBtn.snp.updateConstraints { make in
+            make.width.equalTo(btnSize.width+10+20)
+        }
+        self.skuTitleBtn.xyImagePosition(type: XYButtonImagePosition.imageRight, Space: 3)
+        //
+        self.menuView.removeFromSuperview()
     }
     // MARK: skuTitleBtn
     lazy var skuTitleBtn:UIButton = {
@@ -179,6 +195,7 @@ class XYDeerProductNavigationView: XYBaseView, UIScrollViewDelegate {
     }()
     lazy var menuView:XYDeerSKUMenuView = {
         let menuList:XYDeerSKUMenuView = XYDeerSKUMenuView(frame: CGRectZero)
+        menuList.delegate = self
         menuList.backgroundColor = xyCommonColor_FFF
         return menuList
     }()

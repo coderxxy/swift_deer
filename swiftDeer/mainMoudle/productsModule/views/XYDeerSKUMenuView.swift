@@ -6,8 +6,14 @@
 //
 
 import UIKit
-
+/// XYDeerSKUMenuViewDelegate
+@objc protocol XYDeerSKUMenuViewDelegate {
+    /// didSelectedCell(title:String)
+    @objc optional func didSelectedCell(title:String)
+}
 class XYDeerSKUMenuView: XYBaseView, UITableViewDelegate, UITableViewDataSource {
+    /// XYDeerSKUMenuViewDelegate
+    weak var delegate:XYDeerSKUMenuViewDelegate?
     // sku
     let skuSource: Array<String> = ["全部商品", "个人护理", "饮料", "沐浴洗护", "厨房用具", "休闲食品", "生鲜水果", "酒水", "家庭清洁"]
     override init(frame: CGRect) {
@@ -42,6 +48,7 @@ class XYDeerSKUMenuView: XYBaseView, UITableViewDelegate, UITableViewDataSource 
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let title:String = self.skuSource[indexPath.row]
+        self.delegate?.didSelectedCell!(title: title)
     }
 }
 //
