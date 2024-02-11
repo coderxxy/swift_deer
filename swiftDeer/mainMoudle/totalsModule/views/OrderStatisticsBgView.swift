@@ -84,6 +84,19 @@ class XYDeerOrderStatisticsHeaderView: XYBaseView{
         ["icon": "dps", "title": "待配送(单)", "subTitle": "\(arc4random()%50)"],
         ["icon": "jrjye", "title": "今日交易额(元)", "subTitle": "\(arc4random()%UInt32(10000.0))"]
     ]
+    override var bounds: CGRect {
+        didSet {
+            let cornerRadius: CGFloat = 8
+            backgroundColor = UIColor.white
+            layer.cornerRadius = cornerRadius
+            layer.borderWidth = 0
+            layer.borderColor = UIColor.white.cgColor
+            layer.shadowColor = UIColor.xy.lightGrayColor?.cgColor
+            layer.shadowOffset = CGSize(width: 0, height: 0)
+            layer.shadowOpacity = 0.8
+            layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = xyCommonColor_FFF

@@ -24,7 +24,10 @@ class XYBaseController: UIViewController {
         self.view.backgroundColor = xyCommonColor_EEE//UIColor.white;
     }
     
-
+    lazy var xyAlert:XYAlertView = {
+        let alert: XYAlertView = XYAlertView.init(frame: CGRectZero)
+        return alert
+    }()
     /*
     // MARK: - Navigation
 

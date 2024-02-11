@@ -17,6 +17,10 @@ class XYBaseTableCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    lazy var iconImgView:UIImageView = {
+        let imgView:UIImageView = UIImageView(frame: CGRectZero)
+        return imgView
+    }()
     /** titleLabel */
     lazy var titleLabel: UILabel = {
         let titleLab = self.returnLabel(font: xyTitleFont, txtColor: xyTitleColor)

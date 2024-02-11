@@ -23,6 +23,7 @@ extension XYDeerLoginPresenter: XYDeerLoginViewDelegate{
         XYCommonService.XYDLog("login", separator: "......")
     }
     func loginFindPwdAction(sender: UIButton) {
+        self.loginControlelr?.xyAlert.xyShoWToast(msg: "暂未实现")
         XYCommonService.XYDLog("forget password action!")
     }
 }
