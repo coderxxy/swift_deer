@@ -19,6 +19,7 @@
 		C17D090E2B71EE5000A3B711 /* XYDeerProductNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D090D2B71EE5000A3B711 /* XYDeerProductNavigationView.swift */; };
 		C17D09102B71F81500A3B711 /* XYDeerSKUMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D090F2B71F81500A3B711 /* XYDeerSKUMenuView.swift */; };
 		C17D09132B773BF600A3B711 /* XYDeerCommodityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D09122B773BF600A3B711 /* XYDeerCommodityModel.swift */; };
+		C17D09152B7A3D5700A3B711 /* XYDeerMineNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D09142B7A3D5700A3B711 /* XYDeerMineNavigationView.swift */; };
 		C1DC4DF22B3082AA0018D6E3 /* XYBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF12B3082AA0018D6E3 /* XYBaseView.swift */; };
 		C1DC4DF42B3082C10018D6E3 /* XYBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF32B3082C10018D6E3 /* XYBaseController.swift */; };
 		C1DC4DF62B3082DF0018D6E3 /* XYBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4DF52B3082DF0018D6E3 /* XYBaseNavigationController.swift */; };
@@ -70,6 +71,7 @@
 		C17D090D2B71EE5000A3B711 /* XYDeerProductNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerProductNavigationView.swift; sourceTree = "<group>"; };
 		C17D090F2B71F81500A3B711 /* XYDeerSKUMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerSKUMenuView.swift; sourceTree = "<group>"; };
 		C17D09122B773BF600A3B711 /* XYDeerCommodityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerCommodityModel.swift; sourceTree = "<group>"; };
+		C17D09142B7A3D5700A3B711 /* XYDeerMineNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerMineNavigationView.swift; sourceTree = "<group>"; };
 		C1DC4DF12B3082AA0018D6E3 /* XYBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseView.swift; sourceTree = "<group>"; };
 		C1DC4DF32B3082C10018D6E3 /* XYBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseController.swift; sourceTree = "<group>"; };
 		C1DC4DF52B3082DF0018D6E3 /* XYBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseNavigationController.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 		C1DC4E052B3084010018D6E3 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C17D09142B7A3D5700A3B711 /* XYDeerMineNavigationView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -742,6 +745,7 @@
 				C1DC4E3B2B386A510018D6E3 /* XYDeerLoginPresenterExtension.swift in Sources */,
 				C1DC4E4C2B3FC4FF0018D6E3 /* XYDeerOrderTabSectionHeader.swift in Sources */,
 				C1DC4DF82B3082F90018D6E3 /* XYBaseTabbarController.swift in Sources */,
+				C17D09152B7A3D5700A3B711 /* XYDeerMineNavigationView.swift in Sources */,
 				C1DC4E1E2B3087520018D6E3 /* XYDeerRegisterController.swift in Sources */,
 				C1DC4E4F2B3FFCA70018D6E3 /* XYDeerOrderModel.swift in Sources */,
 				C17D090C2B71ED9900A3B711 /* XYDeerProductsView.swift in Sources */,

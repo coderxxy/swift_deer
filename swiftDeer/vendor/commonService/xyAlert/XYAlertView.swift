@@ -63,7 +63,7 @@ class XYAlertView: UIView {
             }
         }
         // 设置延迟时间（单位为秒）
-        let delayTime = DispatchTimeInterval.seconds(2)
+        let delayTime = DispatchTimeInterval.seconds(1)
         // 将任务添加到主队列并指定延迟时间
         DispatchQueue.main.asyncAfter(deadline: .now() + delayTime, execute: task)
     }
