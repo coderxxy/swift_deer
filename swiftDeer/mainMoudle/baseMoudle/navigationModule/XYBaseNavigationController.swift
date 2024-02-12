@@ -18,10 +18,9 @@ class XYBaseNavigationController: UINavigationController {
     // MARK: 自定义导航基础设置
      private func navigationBaseConfig() {
 //         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.xy.hexStringToColor(hexString: "#2A3038")];
-//         
-//         navigationBar.barTintColor = UIColor.xy.hexStringToColor(hexString: "#7C908A")
-//         navigationBar.backgroundColor = UIColor.xy.hexStringToColor(hexString: "#7C908A")
-//         UINavigationBar.appearance().backgroundColor = UIColor.xy.hexStringToColor(hexString: "#7C908A")
+//         navigationBar.barTintColor = xyCommonColor_FFF//UIColor.xy.hexStringToColor(hexString: "#7C908A") // #7C908A
+//         navigationBar.backgroundColor = xyCommonColor_FFF//UIColor.xy.hexStringToColor(hexString: "#7C908A")
+//         UINavigationBar.appearance().backgroundColor = xyCommonColor_FFF//UIColor.xy.hexStringToColor(hexString: "#7C908A")
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

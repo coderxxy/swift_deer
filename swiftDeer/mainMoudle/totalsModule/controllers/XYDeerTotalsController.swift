@@ -11,19 +11,20 @@ class XYDeerTotalsController: XYBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.vcSubviewsHandle()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //
+    func vcSubviewsHandle(){
+        self.view.addSubview(self.statisticsView)
+        self.statisticsView.snp.makeConstraints { make in
+            make.top.left.bottom.right.equalTo(self.view)
+        }
     }
-    */
-
+    
+    lazy var statisticsView: XYDeerOrderStatisticsBgView = {
+        let bgView: XYDeerOrderStatisticsBgView = XYDeerOrderStatisticsBgView(frame: CGRectZero)
+        return bgView
+    }()
 }
