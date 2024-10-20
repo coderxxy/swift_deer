@@ -44,6 +44,12 @@ class XYBaseView: UIView {
         let eventBtn = UIButton(type: .custom);
         return eventBtn
     }()
+    /** seprate line */
+    lazy var line: UIView = {
+        let line = UIView(frame: CGRectZero)
+        line.backgroundColor = xyCommonColor_EEE
+        return line;
+    }()
 }
 
 extension UIView{

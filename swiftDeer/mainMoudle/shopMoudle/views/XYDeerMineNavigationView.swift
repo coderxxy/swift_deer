@@ -39,6 +39,7 @@ class XYDeerMineNavigationView: XYBaseView {
         self.addSubview(self.avatarImgView)
         self.addSubview(self.titleLab)
         self.addSubview(self.subTitleLab)
+        self.addSubview(self.line)
         //
         self.settingBtn.snp.makeConstraints { make in
             make.right.equalTo(self.snp.right).offset(-20)
@@ -63,6 +64,12 @@ class XYDeerMineNavigationView: XYBaseView {
         self.subTitleLab.snp.makeConstraints { make in
             make.left.right.equalTo(self.titleLab)
             make.top.equalTo(self.titleLab.snp.bottom).offset(5)
+        }
+        self.line.snp.makeConstraints { make in
+            make.left.equalTo(self.titleLab)
+            make.right.equalTo(self.avatarImgView.snp.right).offset(5)
+            make.bottom.equalTo(self.snp.bottom)
+            make.height.equalTo(1)
         }
     }
     // MARK: click event

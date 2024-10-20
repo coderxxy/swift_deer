@@ -1,12 +1,12 @@
 PODS:
-  - Alamofire (5.8.1)
-  - DGCharts (5.0.0):
-    - DGCharts/Core (= 5.0.0)
-  - DGCharts/Core (5.0.0)
-  - IQKeyboardManagerSwift (6.5.11)
+  - Alamofire (5.10.0)
+  - DGCharts (5.1.0):
+    - DGCharts/Core (= 5.1.0)
+  - DGCharts/Core (5.1.0)
+  - IQKeyboardManagerSwift (6.5.16)
   - KakaJSON (1.1.2)
-  - SnapKit (5.6.0)
-  - SnapKitExtend (1.1.0):
+  - SnapKit (5.7.1)
+  - SnapKitExtend (1.1.1):
     - SnapKit
   - XYUIKit-Swift (0.0.1)
 
@@ -16,37 +16,42 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - KakaJSON (~> 1.1.2)
   - SnapKit
-  - SnapKitExtend
+  - SnapKitExtend (from `https://github.com/coderxxy/SnapKitExtend.git`, branch `dev_xxy`)
   - XYUIKit-Swift (from `https://github.com/coderXXY/XYUIKit-Swift.git`, branch `master`)
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - DGCharts
     - IQKeyboardManagerSwift
     - KakaJSON
     - SnapKit
-    - SnapKitExtend
 
 EXTERNAL SOURCES:
+  SnapKitExtend:
+    :branch: dev_xxy
+    :git: https://github.com/coderxxy/SnapKitExtend.git
   XYUIKit-Swift:
     :branch: master
     :git: https://github.com/coderXXY/XYUIKit-Swift.git
 
 CHECKOUT OPTIONS:
+  SnapKitExtend:
+    :commit: 7689e5bcbf2b190bb50ae7487b63eb2f1d781fae
+    :git: https://github.com/coderxxy/SnapKitExtend.git
   XYUIKit-Swift:
     :commit: dc17b7fb8eb5196101fc6acc389dfb646b943ee5
     :git: https://github.com/coderXXY/XYUIKit-Swift.git
 
 SPEC CHECKSUMS:
-  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
-  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
-  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Alamofire: cd0b98508df05796dd2ff278f3bb055a631b5390
+  DGCharts: 1c6daf585b6cfc78807af44ea690d357c410627f
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  SnapKitExtend: aa30cf37196195fae9c4354686cc7710184ebfcc
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SnapKitExtend: af4353f5a6e657cab3ffe7fb654bab60ccd4d0e2
   XYUIKit-Swift: d6d03ccf3e212181c390207d7774934c0ce1435a
 
-PODFILE CHECKSUM: 0b146f389f273ae539b979c77378a47707161b09
+PODFILE CHECKSUM: 9806602bba0a927bf008bb899f0f306b44557c4b
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.2

@@ -6,6 +6,12 @@
 //
 
 import UIKit
+/** show postion */
+public enum XYAlertPostionType : Int  {
+    case top = 0
+    case bottom
+    case center
+}
 
 class XYAlertView: UIView {
     private var callBack: ((Int) -> Void)?
@@ -27,7 +33,7 @@ class XYAlertView: UIView {
         }
     }
     /** showToast */
-    func xyShoWToast(msg: String){
+    func xyShoWToast(msg: String, _ postionType: XYAlertPostionType = .top){
         if msg.isEmpty {
            return
         }
@@ -46,7 +52,15 @@ class XYAlertView: UIView {
         UIView.animate(withDuration: 0.1) {
             self.msgLabel.alpha = 1
             self.msgLabel.snp.makeConstraints { make in
-                make.bottom.equalTo(self.snp.bottom).offset(-(UIDevice.xy_tabBarFullHeight()+50))
+                if postionType == .top{
+                    make.top.equalTo(self.snp.top).offset(UIDevice.xy_navigationFullHeight())
+                }
+                else if postionType == .bottom {
+                    make.bottom.equalTo(self.snp.bottom).offset(-(UIDevice.xy_tabBarFullHeight()+50))
+                }
+                else if postionType == .center {
+                    make.centerY.equalTo(self)
+                }
                 make.width.equalTo(msgSize.width+40)
                 make.height.equalTo(msgSize.height+20)
                 make.centerX.equalTo(self)
@@ -67,6 +81,9 @@ class XYAlertView: UIView {
         // 将任务添加到主队列并指定延迟时间
         DispatchQueue.main.asyncAfter(deadline: .now() + delayTime, execute: task)
     }
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }

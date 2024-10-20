@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14E36A2A0A4246029FEBF376 /* Pods_swiftDeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */; };
+		C1184E9B2CC4AE11003BD36B /* XYDeerMineInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1184E9A2CC4AE11003BD36B /* XYDeerMineInfoView.swift */; };
 		C137F4042BD7293C00D01F78 /* swfit_deer_2000x1000.png in Resources */ = {isa = PBXBuildFile; fileRef = C137F4032BD7293B00D01F78 /* swfit_deer_2000x1000.png */; };
 		C1689EE42B2D708000DA34DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE32B2D708000DA34DD /* AppDelegate.swift */; };
 		C1689EE82B2D708000DA34DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1689EE72B2D708000DA34DD /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		527B68D46F8981735500B38B /* Pods-swiftDeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.release.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.release.xcconfig"; sourceTree = "<group>"; };
 		A7FA91D12E2DF7AEA481105D /* Pods-swiftDeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.debug.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.debug.xcconfig"; sourceTree = "<group>"; };
+		C1184E9A2CC4AE11003BD36B /* XYDeerMineInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerMineInfoView.swift; sourceTree = "<group>"; };
 		C137F4032BD7293B00D01F78 /* swfit_deer_2000x1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swfit_deer_2000x1000.png; sourceTree = "<group>"; };
 		C1689EE02B2D708000DA34DD /* swiftDeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1689EE32B2D708000DA34DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				C17D09142B7A3D5700A3B711 /* XYDeerMineNavigationView.swift */,
+				C1184E9A2CC4AE11003BD36B /* XYDeerMineInfoView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -776,6 +779,7 @@
 				C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */,
 				C1DC4DFA2B3083260018D6E3 /* XYTabbar.swift in Sources */,
 				C1DC4E552B4027630018D6E3 /* XYBaseTableCell.swift in Sources */,
+				C1184E9B2CC4AE11003BD36B /* XYDeerMineInfoView.swift in Sources */,
 				C1DC4E322B37DA4F0018D6E3 /* XYBaseConfig.swift in Sources */,
 				C1DC4E432B3AFF360018D6E3 /* XYDeerOrderView.swift in Sources */,
 				C1DC4E342B38311F0018D6E3 /* XYDeerMarcos.swift in Sources */,
@@ -930,7 +934,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 6F2HPKJKH4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -945,7 +949,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidian.swiftDeer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -962,7 +966,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 6F2HPKJKH4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -977,7 +981,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidian.swiftDeer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
