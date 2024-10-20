@@ -51,7 +51,7 @@ class XYAlertView: UIView {
         self.msgLabel.alpha = 0
         UIView.animate(withDuration: 0.1) {
             self.msgLabel.alpha = 1
-            self.msgLabel.snp.makeConstraints { make in
+            self.msgLabel.snp.remakeConstraints { make in
                 if postionType == .top{
                     make.top.equalTo(self.snp.top).offset(UIDevice.xy_navigationFullHeight())
                 }
@@ -59,11 +59,11 @@ class XYAlertView: UIView {
                     make.bottom.equalTo(self.snp.bottom).offset(-(UIDevice.xy_tabBarFullHeight()+50))
                 }
                 else if postionType == .center {
-                    make.centerY.equalTo(self)
+                    make.centerY.equalTo(self.snp.centerY)
                 }
                 make.width.equalTo(msgSize.width+40)
                 make.height.equalTo(msgSize.height+20)
-                make.centerX.equalTo(self)
+                make.centerX.equalTo(self.snp.centerX)
             }
         } completion: { Bool in
             self.layoutIfNeeded()
