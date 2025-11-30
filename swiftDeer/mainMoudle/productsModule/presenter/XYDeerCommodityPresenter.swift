@@ -21,7 +21,7 @@ class XYDeerCommodityPresenter: NSObject, UITableViewDelegate, UITableViewDataSo
         for idx in 0..<arr.count {
             self.dataSource.append(arr[idx])
         }
-//        self.commodityController?.listTab.reloadData()
+        self.commodityController?.listTab.reloadData()
     }
     
     // MARK: UITableViewDelegate、UITableViewDataSource
@@ -29,7 +29,7 @@ class XYDeerCommodityPresenter: NSObject, UITableViewDelegate, UITableViewDataSo
         return self.dataSource.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: XYDeerProductsCell = self.commodityController?.listTab.dequeueReusableCell(withIdentifier: NSStringFromClass(XYDeerProductsCell.self), for: indexPath) as! XYDeerProductsCell
+        let cell: XYDeerProductsCell = self.commodityController?.listTab.dequeueReusableCell(withIdentifier:String(describing: XYDeerProductsCell.self), for: indexPath) as! XYDeerProductsCell
         let model:XYDeerCommodityInfoModel = self.dataSource[indexPath.row] as! XYDeerCommodityInfoModel
         self.refreshCellWithModel(model, cell)
         return cell

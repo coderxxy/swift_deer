@@ -33,7 +33,7 @@ class XYDeerOrderStatisticsBgView: XYBaseView {
         self.addSubview(self.bgImgView)
         self.addSubview(self.circleImgView)
         self.bgImgView.addSubview(self.titleLab)
-        self.addSubview(self.headerView)
+        self.addSubview(self.orderHeaderView)
         self.bgImgView.snp.makeConstraints { make in
             make.top.left.right.equalTo(self)
             make.height.equalTo(self.xydeerCommonUtil.ratioImgHeight(self.bgImg))
@@ -42,18 +42,20 @@ class XYDeerOrderStatisticsBgView: XYBaseView {
             make.left.right.equalTo(self)
             make.top.equalTo(self.bgImgView.snp.bottom)
             make.height.equalTo(self.xydeerCommonUtil.ratioImgHeight(self.circleImg))
+            make.bottom.equalTo(self.snp.bottom).offset(-15)
         }
         self.titleLab.snp.makeConstraints { make in
             make.bottom.equalTo(self.circleImgView.snp.top).offset(-XYCommonPadding_30)
             make.left.equalTo(self.bgImgView.snp.left).offset(XYCommonPadding_20)
             make.right.equalTo(self.bgImgView.snp.right).offset(-XYCommonPadding_20)
         }
-        self.headerView.snp.makeConstraints { make in
+        self.orderHeaderView.snp.makeConstraints { make in
             make.bottom.equalTo(self.circleImgView.snp.bottom)
             make.top.equalTo(self.circleImgView.snp.top).offset(-XYCommonPadding_20)
             make.left.equalTo(self.bgImgView.snp.left).offset(XYCommonPadding_20)
             make.right.equalTo(self.bgImgView.snp.right).offset(-XYCommonPadding_20)
         }
+        self.layoutIfNeeded();
     }
     /** background imageView */
     lazy var bgImgView:UIImageView = {
@@ -66,7 +68,7 @@ class XYDeerOrderStatisticsBgView: XYBaseView {
         return imgView
     }()
     /** XYDeerOrderStatisticsHeaderView */
-    lazy var headerView: XYDeerOrderStatisticsHeaderView = {
+    lazy var orderHeaderView: XYDeerOrderStatisticsHeaderView = {
         let statisticsHeader: XYDeerOrderStatisticsHeaderView = XYDeerOrderStatisticsHeaderView(frame: CGRectZero)
         return statisticsHeader
     }()

@@ -18,6 +18,10 @@ class XYDeerProductsController: XYBaseController {
         self.productSubviews()
     }
     func productSubviews() {
+        // 不要放在懒加载中设置 否则会循环引用 闪退
+        self.listTab.delegate = (self.tabPresenter as any UITableViewDelegate)
+        self.listTab.dataSource = (self.tabPresenter as any UITableViewDataSource)
+        //
         self.view.addSubview(self.skuTitleView)
         self.view.addSubview(self.listTab)
         self.skuTitleView.snp.makeConstraints { make in
@@ -53,9 +57,7 @@ class XYDeerProductsController: XYBaseController {
     lazy var listTab: UITableView = {
         let tab: UITableView = UITableView(frame: CGRectZero, style: .plain)
         tab.separatorStyle = .none
-        tab.delegate = (self.tabPresenter as any UITableViewDelegate)
-        tab.dataSource = (self.tabPresenter as any UITableViewDataSource)
-        tab.register(XYDeerProductsCell.self, forCellReuseIdentifier: NSStringFromClass(XYDeerProductsCell.self))
+        tab.register(XYDeerProductsCell.self, forCellReuseIdentifier: String(describing: XYDeerProductsCell.self))
         return tab
     }()
     lazy var skuTitleView:XYDeerProductNavigationView = {

@@ -14,6 +14,7 @@ target 'swiftDeer' do
   pod 'XYUIKit-Swift', :git=>'https://github.com/coderXXY/XYUIKit-Swift.git', :branch => 'master'
   pod 'KakaJSON', '~> 1.1.2'    # json 模型转换
   pod 'DGCharts'
+  pod 'GRDB.swift'
 #  pod 'SCLAlertView'			# alert
   
 end
