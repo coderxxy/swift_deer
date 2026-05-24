@@ -7,7 +7,7 @@
 
 import UIKit
 
-class XYDeerCommodityPresenter: NSObject, UITableViewDelegate, UITableViewDataSource, XYDeerProductNavigationViewDelegate {
+class XYDeerCommodityPresenter: NSObject, UITableViewDelegate, UITableViewDataSource, XYDeerProductNavigationViewDelegate, XYDeerProductsCellDelegate {
     weak var commodityController:XYDeerProductsController?
     init(controller: UIViewController) {
         super.init()
@@ -30,11 +30,13 @@ class XYDeerCommodityPresenter: NSObject, UITableViewDelegate, UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: XYDeerProductsCell = self.commodityController?.listTab.dequeueReusableCell(withIdentifier:String(describing: XYDeerProductsCell.self), for: indexPath) as! XYDeerProductsCell
+        cell.cellDelegate = self;
         let model:XYDeerCommodityInfoModel = self.dataSource[indexPath.row] as! XYDeerCommodityInfoModel
-        self.refreshCellWithModel(model, cell)
+        self.refreshCellWithModel(model, cell, indexPath: indexPath)
         return cell
     }
-    func refreshCellWithModel(_ model:XYDeerCommodityInfoModel, _ cell:XYDeerProductsCell){
+    func refreshCellWithModel(_ model:XYDeerCommodityInfoModel, _ cell:XYDeerProductsCell, indexPath: IndexPath){
+        cell.cellIdxPath = indexPath
         cell.iconImgView.image = XYDeerImg(imgName: model.goodsIcon)
         cell.titleLabel.text = model.goodsName
         cell.subTitleLabel.text = model.goodsPrice
@@ -58,6 +60,10 @@ class XYDeerCommodityPresenter: NSObject, UITableViewDelegate, UITableViewDataSo
     // MARK: XYDeerProductNavigationViewDelegate
     func selectedIdx(idx: Int) {
         
+    }
+    // TODO: XYDeerProductsCellDelegate
+    func didClickMoreWithIndexPath(indexPath: IndexPath) {
+        XYCommonService.XYDLog("\(indexPath.row)")
     }
     lazy var dataSource: Array = {
         let source: Array = Array<Any>()

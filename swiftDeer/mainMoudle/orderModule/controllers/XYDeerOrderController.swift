@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 class XYDeerOrderController: XYBaseController {
     var curTabList: UITableView?

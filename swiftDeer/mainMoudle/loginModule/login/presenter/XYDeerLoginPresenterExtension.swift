@@ -19,6 +19,9 @@ extension XYDeerLoginPresenter: XYDeerLoginViewDelegate{
             XYAlertView().xyShoWToast(msg: "请检查账号和密码是否符合要求，账号不得少于5位，密码不得少于6位")
         } else {
             self.loginControlelr?.view.window?.rootViewController = XYBaseTabbarController()
+            // 标识已登录
+            UserDefaults.standard.setValue(true, forKey: kIsLogined)
+            UserDefaults.standard.synchronize()
         }
         XYCommonService.XYDLog("login", separator: "......")
     }

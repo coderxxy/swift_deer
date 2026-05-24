@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 class XYDeerOrderPresenter: NSObject, XYDeerOrderViewDelegate, XYDeerOrderHeaderViewDelegate, UITableViewDelegate, UITableViewDataSource , XYDeerLatestOrderCellDelegate{
     weak var homeOrderVC:XYDeerOrderController?
@@ -40,8 +41,21 @@ class XYDeerOrderPresenter: NSObject, XYDeerOrderViewDelegate, XYDeerOrderHeader
         tabList.delegate = self
         tabList.dataSource = self
         self.homeOrderVC?.curTabList = tabList
+        
+        setupRefreshAction()
         //
         self.refreshOrderListAction()
+    }
+    func setupRefreshAction() {
+        // 下拉刷新
+        self.homeOrderVC?.curTabList?.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+            self.refreshOrderListAction()
+        })
+        // 上拉加载
+        self.homeOrderVC?.curTabList?.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
+            self.loadMoreOrderDataAction()
+        })
+        self.homeOrderVC?.curTabList?.mj_header?.beginRefreshing()
     }
     // MARK: UITableViewDelegate, UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {

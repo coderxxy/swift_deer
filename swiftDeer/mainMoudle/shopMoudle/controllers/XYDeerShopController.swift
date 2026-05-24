@@ -34,6 +34,9 @@ class XYDeerShopController: XYBaseController, XYDeerMineNavigationViewDelegate, 
     // MARK: XYDeerMineNavigationViewDelegate
     func clickSettingBtnAction(_ sender: UIButton) {
         self.xyAlert.xyShoWToast(msg: "setting action")
+        let settingVC: XYDeerShopSettingController = XYDeerShopSettingController.init()
+        settingVC.navigationItem.title = "设置"
+        self.navigationController?.pushViewController(settingVC, animated: true)
     }
     func clickMsgBtnAction(_ sender: UIButton) {
         self.xyAlert.xyShoWToast(msg: "msg action")

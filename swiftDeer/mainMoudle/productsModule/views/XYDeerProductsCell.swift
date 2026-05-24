@@ -6,8 +6,17 @@
 //
 
 import UIKit
+///XYDeerProductsCellDelegate
+@objc protocol XYDeerProductsCellDelegate{
+    /// clickMore
+    @objc func didClickMoreWithIndexPath(indexPath: IndexPath);
+}
 
 class XYDeerProductsCell: XYBaseTableCell {
+    ///cellDelegate
+    weak var cellDelegate: XYDeerProductsCellDelegate?;
+    ///cellIdxPath
+    var cellIdxPath: IndexPath? = nil;
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -19,6 +28,7 @@ class XYDeerProductsCell: XYBaseTableCell {
         self.subTitleLabel.textAlignment = .left
         self.clickBtn.setImage(XYDeerImg(imgName: "ellipsis"), for: .normal)
         self.clickBtn.setImage(XYDeerImg(imgName: "ellipsis"), for: .highlighted)
+        self.clickBtn.addTarget(self, action: #selector(didCellMore(sender:)), for: UIControl.Event.touchUpInside)
         
         self.contentView.addSubview(self.cellContentView)
         self.cellContentView.addSubview(self.iconImgView)
@@ -72,6 +82,9 @@ class XYDeerProductsCell: XYBaseTableCell {
     }
     
     // MARK: private method
+    @objc func didCellMore(sender: UIButton) {
+        self.cellDelegate?.didClickMoreWithIndexPath(indexPath: self.cellIdxPath ?? IndexPath(index: 0))
+    }
     // MARK: 立减
     lazy var lijianLab:UILabel = {
         let lijian:UILabel = UILabel(frame: CGRectZero)

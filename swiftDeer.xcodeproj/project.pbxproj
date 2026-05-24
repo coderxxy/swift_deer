@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		14E36A2A0A4246029FEBF376 /* Pods_swiftDeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A3C1B9F838073FF57A3FB /* Pods_swiftDeer.framework */; };
+		C100A2BC2FC1ABA400E75535 /* Marcos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100A2BB2FC1ABA400E75535 /* Marcos.swift */; };
+		C100A2BE2FC3309E00E75535 /* XYDeerShopSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100A2BD2FC3309E00E75535 /* XYDeerShopSettingController.swift */; };
+		C100A2C12FC332AF00E75535 /* XYDeerShopSettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100A2C02FC332AF00E75535 /* XYDeerShopSettingPresenter.swift */; };
 		C1184E9B2CC4AE11003BD36B /* XYDeerMineInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1184E9A2CC4AE11003BD36B /* XYDeerMineInfoView.swift */; };
 		C11FEEA42CCE3758005AF980 /* XYDeerShopRecordDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FEEA32CCE3758005AF980 /* XYDeerShopRecordDataModel.swift */; };
 		C137F4042BD7293C00D01F78 /* swfit_deer_2000x1000.png in Resources */ = {isa = PBXBuildFile; fileRef = C137F4032BD7293B00D01F78 /* swfit_deer_2000x1000.png */; };
@@ -66,6 +69,9 @@
 /* Begin PBXFileReference section */
 		527B68D46F8981735500B38B /* Pods-swiftDeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.release.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.release.xcconfig"; sourceTree = "<group>"; };
 		A7FA91D12E2DF7AEA481105D /* Pods-swiftDeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDeer.debug.xcconfig"; path = "Target Support Files/Pods-swiftDeer/Pods-swiftDeer.debug.xcconfig"; sourceTree = "<group>"; };
+		C100A2BB2FC1ABA400E75535 /* Marcos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marcos.swift; sourceTree = "<group>"; };
+		C100A2BD2FC3309E00E75535 /* XYDeerShopSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerShopSettingController.swift; sourceTree = "<group>"; };
+		C100A2C02FC332AF00E75535 /* XYDeerShopSettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerShopSettingPresenter.swift; sourceTree = "<group>"; };
 		C1184E9A2CC4AE11003BD36B /* XYDeerMineInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerMineInfoView.swift; sourceTree = "<group>"; };
 		C11FEEA32CCE3758005AF980 /* XYDeerShopRecordDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDeerShopRecordDataModel.swift; sourceTree = "<group>"; };
 		C137F4032BD7293B00D01F78 /* swfit_deer_2000x1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swfit_deer_2000x1000.png; sourceTree = "<group>"; };
@@ -146,6 +152,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C100A2B92FC1AB6400E75535 /* vendorsMoudle */ = {
+			isa = PBXGroup;
+			children = (
+				C100A2BA2FC1AB7500E75535 /* marcos */,
+			);
+			path = vendorsMoudle;
+			sourceTree = "<group>";
+		};
+		C100A2BA2FC1AB7500E75535 /* marcos */ = {
+			isa = PBXGroup;
+			children = (
+				C100A2BB2FC1ABA400E75535 /* Marcos.swift */,
+			);
+			path = marcos;
+			sourceTree = "<group>";
+		};
+		C100A2BF2FC3329700E75535 /* persenters */ = {
+			isa = PBXGroup;
+			children = (
+				C100A2C02FC332AF00E75535 /* XYDeerShopSettingPresenter.swift */,
+			);
+			path = persenters;
+			sourceTree = "<group>";
+		};
 		C137F4022BD7272200D01F78 /* showImgs */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +239,7 @@
 		C1DC4DE72B3081980018D6E3 /* mainMoudle */ = {
 			isa = PBXGroup;
 			children = (
+				C100A2B92FC1AB6400E75535 /* vendorsMoudle */,
 				C1DC4E182B3085010018D6E3 /* mainSource */,
 				C1DC4E172B3084DF0018D6E3 /* appDelegate */,
 				C1DC4E012B30839C0018D6E3 /* loginModule */,
@@ -272,6 +303,7 @@
 		C1DC4DEC2B3082140018D6E3 /* shopMoudle */ = {
 			isa = PBXGroup;
 			children = (
+				C100A2BF2FC3329700E75535 /* persenters */,
 				C1DC4E062B3084100018D6E3 /* utils */,
 				C1DC4E052B3084010018D6E3 /* views */,
 				C1DC4DFD2B30836E0018D6E3 /* controllers */,
@@ -318,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				C1DC4E252B3087B60018D6E3 /* XYDeerShopController.swift */,
+				C100A2BD2FC3309E00E75535 /* XYDeerShopSettingController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -778,6 +811,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C100A2C12FC332AF00E75535 /* XYDeerShopSettingPresenter.swift in Sources */,
+				C100A2BC2FC1ABA400E75535 /* Marcos.swift in Sources */,
 				C1DC4E242B3087A10018D6E3 /* XYDeerTotalsController.swift in Sources */,
 				C1DC4E672B443FCF0018D6E3 /* XYDeerCommonUtil.swift in Sources */,
 				C1DC4DFC2B3083490018D6E3 /* XYBaseNavigationBar.swift in Sources */,
@@ -818,6 +853,7 @@
 				C1DC4E2A2B36CA110018D6E3 /* XYDeerLoginView.swift in Sources */,
 				C1DC4E202B3087750018D6E3 /* XYDeerOrderController.swift in Sources */,
 				C1DC4DF62B3082DF0018D6E3 /* XYBaseNavigationController.swift in Sources */,
+				C100A2BE2FC3309E00E75535 /* XYDeerShopSettingController.swift in Sources */,
 				C1DC4E262B3087B60018D6E3 /* XYDeerShopController.swift in Sources */,
 				C1DC4DFA2B3083260018D6E3 /* XYTabbar.swift in Sources */,
 				C15955222EDB305A00AAFF4F /*  class XYDeerTotalsPresenter.swift in Sources */,

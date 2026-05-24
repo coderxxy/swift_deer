@@ -12,16 +12,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow()
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         // 判断是否已经登陆
-        let logined:NSNumber? = UserDefaults.standard.object(forKey: "deerLogined") as? NSNumber
+        let logined: Bool? = UserDefaults.standard.value(forKey: kIsLogined) as? Bool
         // 键盘收缩
         XYDeerConfigService().xyDeerKeyboardHandle()
-        // 
-        window?.rootViewController = XYBaseNavigationController.init(rootViewController: XYDeerLoginController())
+        //
+        if (logined ?? false){
+            window?.rootViewController = XYBaseNavigationController.init(
+                rootViewController: XYBaseTabbarController()
+            )
+        } else {
+            window?.rootViewController = XYBaseNavigationController.init(
+                rootViewController: XYDeerLoginController()
+            )
+        }
+
         window?.makeKeyAndVisible()
         return true
     }
 }
-

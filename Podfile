@@ -9,6 +9,7 @@ target 'swiftDeer' do
   pod 'Alamofire'           	  # 网络请求
   pod 'SnapKit'               	# UI布局
 #  pod 'SnapKitExtend'
+  pod 'MJRefresh', '3.7.9'
   pod 'IQKeyboardManagerSwift'
   pod 'SnapKitExtend', :git => 'https://github.com/coderxxy/SnapKitExtend.git', :branch => 'dev_xxy'
   pod 'XYUIKit-Swift', :git=>'https://github.com/coderXXY/XYUIKit-Swift.git', :branch => 'master'

@@ -38,6 +38,7 @@ class XYDeerCommodityDataModel: NSObject, Convertible {
 }
 // MARK: 商品数据
 class XYDeerGoodsJsonData: NSObject{
+    var randomNum:Int = Int(arc4random()%30);
     func goodsJsonHandle() -> Array<Any>{
         let goodsInfoDic:Dictionary = [
             "goodsId":"1600000000",
@@ -51,7 +52,7 @@ class XYDeerGoodsJsonData: NSObject{
         ] as [String : Any]
         //
         var goodsInfoArr: Array<Any> = []
-        for _ in 0..<12{
+        for _ in 0..<randomNum{
             goodsInfoArr.append(goodsInfoDic)
         }
         let goodsDataDic:Dictionary = ["data":goodsInfoArr, "code":200] as [String : Any]
